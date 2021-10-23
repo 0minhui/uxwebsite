@@ -1,0 +1,626 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0px solid #000 ;  
+}
+img{
+    width: 100%;
+    display: block;
+}
+body{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    font-family:"Noto Sans TC",Arial, Helvetica,"Heiti TC","微軟正黑","Microsoft JhengHei", sans-serif;
+    font-weight: 700; 
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255); 
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(179, 179, 179, 0.8); 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #c9c9c9c2; 
+}
+a,p,h1,h2,h3{
+    text-decoration: none; 
+    white-space: nowrap;  /* 強制單行不要換行 */
+}
+p{
+    color: #426791; 
+}
+.about_cert h2,.pro_name h1,#contact h1,.footer_title{
+    color: #3a84c9;
+    
+}
+header,#product,footer{
+    background-color:#ffffff;
+}
+/* -------------------------頁首區--------------------- */
+header{
+    opacity: 0;
+    background-color: #ffffffe5;
+    box-shadow: 0px 0px 6px #a7a7a7;
+    position: fixed;/* 加了才浮在上面 */
+    top: 0;
+    width: 100%;
+    display: flex; 
+    /* position: relative; */
+    align-items: center;
+    height: 9vh; 
+    z-index: 999;
+}
+header h1{ 
+    margin-left: 30px;
+    margin-right: 20px;
+    width: 280px;   
+}
+header h2{
+    margin-right: 30px;
+    width: 200px; 
+}
+header h3{
+    width: 70px;
+    margin-right: 12px;
+}
+header h4{
+    width: 70px;
+    margin-right: 10px;
+}
+header nav{
+    width: 90%;
+}
+header nav ul{
+    list-style-type: none;
+    display: flex; 
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+header nav li{
+    width: 100px;
+}
+header nav a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    color: dimgrey;
+}
+header nav a:hover{
+    color: #053486c2;
+    padding-bottom: 10px;
+    border-bottom: 4px solid #053486c2 ;
+}
+/* -------------------------head_news區--------------------- */
+.head_news{
+    background-image: url("./images/head_bg1.png");  
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh ;
+    position: relative;
+    overflow-x: hidden;
+}
+.head_slogn{
+    margin-top: 250px; 
+}
+.slogn1{
+    font-size: 3.5rem;
+    margin-bottom: 45px;
+    font-weight: 700;
+    color:#e6effcda;
+    letter-spacing: 0.5rem;
+    text-shadow: 5px 2px 3px #303335;
+    animation: slogn1 2s ;
+    font-family: 'Noto Serif TC', serif;
+}
+@keyframes slogn1{
+    from{opacity: 0.1;}
+    to{opacity: 1;}
+}
+.slogn2{
+   font-size: 2.5rem;
+   font-weight: 700;
+   color:#e6effcda;
+   letter-spacing: 0.5rem;
+   text-shadow: 2px 2px 2px #303335;
+   animation: slogn2 1s 1s backwards;
+   font-family: 'Noto Serif TC', serif;
+}
+@keyframes slogn2{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.news1{
+    display: flex;
+    justify-content: flex-end;
+    align-items:center; 
+    width: 45%;
+    background-color: rgba(21, 27, 51, 0.505);
+    height: 30vh;  /* 支撐影片高度 */
+    position: absolute;  
+    bottom: 40px; 
+    left: 0;
+    animation: news1 2s 1s backwards;
+}
+@keyframes news1{
+    from{left: -250%;}
+    to{ left: 0;}
+}
+.news2{
+    display: flex;
+    justify-content: flex-start;
+    align-items:center; 
+
+    width: 45%;
+    background-color: rgba(21, 27, 51, 0.505);
+    height: 30vh;  /* 支撐影片高度 */
+    position: absolute;  
+    bottom: 40px; 
+    right: 0;
+    animation: news2 2s 1s backwards;
+}
+@keyframes news2{
+    from{right: -250%;}
+    to{right: 0;}
+}
+.video1{
+    height: 100%;  /* 這句話一定要加 */
+    object-fit: contain;  /* 內容一定會出現 */
+    overflow: hidden;
+}
+.video2{
+    height: 100%;  /* 這句話一定要加 */
+    object-fit: contain;  /* 內容一定會出現 */
+    overflow: hidden;
+}
+/* -------------------------head_news區--------------------- */
+/* -------------------------about us區-------------------  */
+#about{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url(./images/officebw.jpg); 
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+/* #about div{
+   /* height: 70vh; */ /* 原本給兩個區塊一半各50vh 大小 
+} */
+.iso27001{
+    width: 200px;
+}
+.duns{
+    width: 300px;
+}
+.aboutux{ /* 關於往優整個區塊 */
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 100vh;
+    /* background-color: rgba(150, 150, 150, 0.39); */
+    background-color: rgba(196, 202, 214, 0.52); 
+}
+
+.aboutux div{
+    margin: 0 14% 0 10%;  /* 高度改了與上邊距離 */
+    /* background-color: rgba(255, 255, 255, 0.6); */
+    background-color: rgb(26,51,100,0.98);
+    box-shadow: 3px 3px 10px rgba(68, 68, 68, 0.799);
+    
+    border-radius:0 0 35px 35px;
+    /* box-shadow: 1px 1px 8px #313131; */
+    height: 92vh;   /* 白背景長度 */
+    /* width: 39%; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.aboutux a{
+    display: block;  /* 改變尺寸 才可以is區塊 */
+    /* 文字按鈕 比較需要用rem(跟文字有關的單位) */
+    width: 5.5rem;  /* 用rem用意防止放大跑版 */
+   /*  height:2rem; */
+    padding: 0px 2px;
+    border: 1px solid #96b3d4 ;
+    border-radius: 5px;
+    /* font-weight: bold; */
+    font-size: 1rem;
+    
+    margin:20px 0px 20px 70%; /* 讓a整個置中  auto左右置中 */
+
+    text-align: center; /* 文字more置中 */
+    text-decoration: none;
+    color: #96b3d4;  
+    
+}
+.aboutux a:hover{
+    color: #ffffff;
+    border: 1px solid #ffffff ;
+}
+/* .aboutux div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+.aboutux h1{ /* 標題 */
+    text-shadow: 3px 2px 2px rgba(34, 35, 51, 0.699);
+    border-bottom:5px solid rgb(181, 203, 231);
+    padding-bottom: 15px;
+    margin: 100px 80px 25px 70px;
+    width: 300px;
+    letter-spacing: 0.3rem;
+    font-size: 2.2rem;
+    
+    color: #cfcfcf;
+    /* color:#203864; */
+}
+.aboutux p{
+    color: #dddddd;
+    margin: 0 40px 100px 70px;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    /* color:#464646; */
+    overflow: auto;
+    font-weight: 500;
+   /*  border:1px solid #000; */
+}
+
+.about_cert{
+    /* background-color: rgba(216, 216, 216, 0.486); */
+    background-color: rgb(201,225,255,0.8);
+    box-shadow: 2px 2px 6px rgba(128, 128, 128, 0.699);
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius:0 35px 35px 0px ;
+    position: absolute;
+    left: 0%;
+    bottom: 14%;
+
+    animation: about_cert 4s 2s backwards;
+    height: 45vh;
+   
+    
+}
+@keyframes about_cert{
+    from{left: -200%;}
+    to{left: 0%;}
+}
+.about_cert div{ /* 證照排版區 */
+    align-items: flex-end;
+    display: flex;
+    height: 30vh; /* 證照框高度 */
+    margin-right: 30px;
+   
+}
+
+.about_cert h2{ /* 標題 */
+    border-bottom:2px solid rgb(26,51,100,0.88);
+    text-shadow: 3px 2px 1px #c2c2c2;
+    padding:0px 0 10px 0;
+    margin: 10px 60px 0px 310px;
+    letter-spacing: 0.3rem;
+    font-size: 1.5rem;
+    color:rgb(26,51,100,0.88); 
+    display: flex;
+    justify-content: flex-end;
+}
+.about_cert img{
+    
+    margin:0 15px 0 25px;
+    /* border-radius: 25px; */
+}
+/* -------------------------about us區-------------------  */
+/* -------------------------product區----------#46597c----------- */
+#product{
+    background-color: #d9dce385;
+    /* background-image: url(./images/product_bg1.gif); 
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed; */
+    height: 100vh; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pro_name{
+    margin-top: 40px;
+}
+.pro_name hr{
+    display: inline-block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0;
+    margin-right: 0;
+    border-style: solid;
+    width:230px;
+    background-color: rgb(202, 202, 202);
+    height: 5px;
+    border: 0;
+}
+.pro_name h1{ /* 標題 */
+    display: inline-block;
+    margin: 0px 25px 25px;
+    font-size: 2.2rem;
+     color: rgba(79, 79, 80, 0.88) !important; 
+    letter-spacing: 0.5rem;
+}
+.product_intro {
+    
+    width: 70%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.product_intro a{
+    
+    width: 35%;
+    margin: 10px;
+}
+.product_intro figure{
+    
+    width: 100%;
+    margin: auto;
+    margin: 0px px;
+    overflow: hidden;
+    
+    
+    background-color: #e3e6ec71;
+    position: relative;
+    border-radius: 0px;
+}
+.product_intro figure img{
+    
+    opacity: .4;
+}
+.product_intro figure img:hover{
+    opacity: 1;
+    background-color: rgb(255, 255, 255); 
+}
+.product_intro figure p{ /*同標題背景*/
+    display: block;
+    background-color:rgb(26,51,100,0.88);
+    color: #ffffff;
+    padding: 0.3rem 0.9rem;
+    text-decoration: none;
+    text-align: center;
+    width: 11.5rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.product_intro figure p:hover{
+    background-color: #a7a7a7;
+} 
+.f1{
+    box-shadow: -1px -1px 8px rgba(123, 127, 134, 0.664);
+}
+.f2{
+    box-shadow: 1px -1px 8px rgba(123, 127, 134, 0.664);
+}
+.f3{
+    box-shadow: -1px 1px 8px rgba(123, 127, 134, 0.664);
+}
+.f4{
+    box-shadow: 1px 1px 8px rgba(123, 127, 134, 0.664);
+}
+.product_intro figure .p1{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.product_intro figure .p2{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.product_intro figure .p3{
+    position: absolute;
+    top: 0px;
+    right: 0px; 
+}
+.product_intro figure .p4{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+/* -------------------------contact區--------------------- */
+#contact{
+    /* background-image: url(./images/contact_bg.png); */
+    background-color: rgba(26, 51, 100, 0.918);
+    background-position: center;
+    background-size: cover;
+  /*   border-left: 200px solid #ffffff;
+    border-right: 200px solid #ffffff; */
+    /* background-attachment: fixed; */
+    /* height: 40vh; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;  
+    position: relative; 
+}
+.con2,.con3{
+    background-color: rgba(255, 255, 255, 0.707);
+    height: 250px;
+    /* width: 18%; */
+    border-radius: 15px;
+}
+
+#contact h1,#contact h3{
+    margin-left: 15px;
+    margin-top: 15px;
+ }
+#contact h1{ /* 標題 */
+    border-bottom:5px solid rgb(184, 184, 184);
+    padding-bottom: 4px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 200px;
+   /*  color:#203864; */
+    letter-spacing: 0.3rem;
+    font-size: 2rem;
+}
+#contact h3{/* 標題 */
+    margin-top: 20px;
+    margin-left: 21px;
+    color:#4c5b79;
+}
+#contact div{
+    margin: 50px 30px;
+}
+#contact P{
+    font-size: 1rem;
+    margin: 5px 20px 15px;
+    /* color:#464646; */
+}
+#contact iframe{
+    border-radius: 15px;
+}
+/* -------------------------footert區--------------------- */
+footer{
+    background-color: rgba(255, 255, 255, 0.503);
+    box-shadow: 0px 0px 6px #a7a7a7;
+}
+.footer_list{
+    width: 57%;
+    display: flex;
+    margin: auto;
+    padding:25px 0;
+    padding-left: 40px;
+    justify-content: space-between; 
+}
+.footer_policy li{
+    list-style-type: none; 
+    margin:3px 0;
+}
+.footer_policy a{
+    display: block; 
+    margin: auto;
+    width: 8rem;
+    text-align: center;
+    font-size: 0.9rem ;
+    font-weight: 500;
+    color:#abafb8 ;
+    border-left: 5px solid transparent;
+    padding-left: 5px ;
+   
+}
+.footer_policy a:hover{
+    color:#053486c2 ;
+    border-left: 5px solid #053486c2 ;
+    padding-left: 5px;
+}
+footer img{
+    width: 200px;
+}
+footer nav{
+    margin-top: 4px;
+    display: flex;
+}
+footer nav ul{
+    margin: 0 30px;
+}
+footer nav li{
+    margin:5px 0;
+    list-style-type: none; 
+    white-space: nowrap;
+}
+footer nav a{
+    font-size: 1rem;
+    
+    font-weight: 500;
+    color:#848992 ;
+    border-left: 5px solid transparent;
+    padding-left: 5px;
+}
+footer nav a:hover{
+    color:#053486c2 ;
+    border-left: 5px solid #053486c2;
+    padding-left: 5px;
+}
+.footer_copyright{
+    margin: auto;
+    border-top: 1px dotted rgb(182, 182, 182);
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #abafb8 ;
+    padding: 15px;
+    width: 60%;
+}
+.footer_title{
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    border-bottom: 4px solid rgb(202, 202, 202);
+    margin-bottom: 7px;
+    margin-left: 10px;
+    padding-bottom: 5px;
+    width: 4.8rem;
+    border-style: solid; 
+}
+#gotop{
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 75px;
+    height: 40px;
+    cursor: pointer; /* 游標過去手的形狀 */
+    background-color: #042a6bbd;
+    
+    line-height: 40px;
+    text-align: center;
+    border-radius: 100px;
+}
+#gotop{
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 75px;
+    height: 40px;
+    cursor: pointer; /* 游標過去手的形狀 */
+    background-color: #042a6bbd;
+    
+    line-height: 40px;
+    text-align: center;
+    border-radius: 100px;
+}
+#gotop:hover{
+    background-color: #4d4d4dbd;
+
+}
+#gotop p{
+    text-align: center;
+    font-size: 1.1rem;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+    color:#fff;
+}
+/* -------------------------footert區--------------------- */
