@@ -200,6 +200,7 @@ footer nav a:hover{
 }
 .infor_security p{
     color: #474747;
+    font-weight: 500;
 }
 .infor_security .name{
     font-size: 1.2rem;
