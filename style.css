@@ -455,15 +455,15 @@ header nav a:hover{
     background-color: rgba(26, 51, 100, 0.918);
     background-position: center;
     background-size: cover;
-  /*   border-left: 200px solid #ffffff;
-    border-right: 200px solid #ffffff; */
-    /* background-attachment: fixed; */
-    /* height: 40vh; */
     display: flex;
     align-items: flex-start;
     justify-content: center;  
     position: relative; 
+    width: 100%;
+    margin: auto;
+  
 }
+
 .con2,.con3{
     background-color: rgba(255, 255, 255, 0.707);
     height: 250px;
@@ -507,11 +507,11 @@ footer{
     box-shadow: 0px 0px 6px #a7a7a7;
 }
 .footer_list{
-    width: 57%;
+    width: 55%;
     display: flex;
     margin: auto;
     padding:25px 0;
-    padding-left: 40px;
+    /* padding-left: 140px; */
     justify-content: space-between; 
 }
 .footer_policy li{
