@@ -11,7 +11,7 @@ $(function(){
     });
     /* --------------- */
     $(window).scroll (function(){
-        if($(this).scrollTop() > 200){
+        if($(this).scrollTop() > 100){
             $('#gotop').stop().fadeTo('fast',.5);
         } else {
             $('#gotop').stop().fadeOut('fast');
