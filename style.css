@@ -603,24 +603,24 @@ footer nav a:hover{
     position: fixed;
     bottom: 50px;
     right: 50px;
-    width: 75px;
+    width: 60px;
     height: 40px;
     cursor: pointer; /* 游標過去手的形狀 */
-    background-color: #042a6bbd;
+    background-color: #4d4d4dbd;
     
     line-height: 40px;
     text-align: center;
     border-radius: 100px;
 }
 #gotop:hover{
-    background-color: #4d4d4dbd;
+    background-color: #1f1f1fbd;
 
 }
 #gotop p{
     text-align: center;
     font-size: 1.1rem;
-    letter-spacing: 0.2rem;
-    font-weight: 500;
+    /* letter-spacing: rem; */
+    font-weight: 700;
     color:#fff;
 }
 /* -------------------------footert區--------------------- */
