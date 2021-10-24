@@ -102,7 +102,8 @@ header nav a:hover{
 }
 /* -------------------------head_news區--------------------- */
 .head_news{
-    background-image: url("./images/head_bg1.png");  
+    background-image: url("./images/head_bg1.png");
+    background-color: #063983;  
     background-size: cover; 
     background-position: center;
     background-attachment: fixed;
