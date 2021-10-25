@@ -26,10 +26,6 @@ $(function(){
         }
     });
 
-   /*  $(".aboutux",".about_cert").smoove({
-            offset:'15%'
-    });  */
-
     $('.box').smoove({
         offset:'30%'
     });
@@ -37,10 +33,29 @@ $(function(){
     $('.box1').smoove({
         offset:'10%'
     });
+    $('.box2').smoove({
+        offset:'20%'
+    });
 
+    $('.about_cert').smoove({
+        offset:'30%',
+        moveX:'-150%'
+    });
+
+
+/*     $("nav>ul>li").on({
+        mouseover:function(){
+        $(this).css("background-color","#48405f");
+        $(this).children('.menu_list').stop().slideDown();
+        },
+        mouseout:function(){
+        $(this).css("background-color", "#AB2A4C");
+        $(this).children('.menu_list').stop().slideUp();
+        },
+        click:function(){
+        $(this).css("background-color", "#920DOD");
+        }
+    }); */
     
-
-
-
 });
 
