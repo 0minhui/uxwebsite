@@ -300,24 +300,14 @@ header nav a:hover{
     position: absolute;
     left: 0%;
     bottom: 14%;
-
-    animation: about_cert 4s 2s backwards;
-    height: 45vh;
-   
-    
-}
-@keyframes about_cert{
-    from{left: -200%;}
-    to{left: 0%;}
+    height: 45vh;   
 }
 .about_cert div{ /* 證照排版區 */
     align-items: flex-end;
     display: flex;
     height: 30vh; /* 證照框高度 */
     margin-right: 30px;
-   
 }
-
 .about_cert h2{ /* 標題 */
     border-bottom:2px solid rgb(26,51,100,0.88);
     text-shadow: 3px 2px 1px #c2c2c2;
@@ -335,7 +325,7 @@ header nav a:hover{
     /* border-radius: 25px; */
 }
 /* -------------------------about us區-------------------  */
-/* -------------------------product區----------#46597c----------- */
+/* -------------------------product區--------------- */
 #product{
     background-color: #d9dce385;
     /* background-image: url(./images/product_bg1.gif); 

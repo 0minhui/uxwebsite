@@ -257,3 +257,11 @@ footer nav a:hover{
     display: block!important;
     width: 700px !important;
 }
+.product div .newsvideo{
+    
+    text-align: center;
+    box-shadow: 0px 0px 0px #ffffff !important;
+    margin: 0 !important;
+    padding: 0 !important ;
+    
+}
