@@ -26,8 +26,15 @@ $(function(){
         }
     });
 
+
+
     $('.box').smoove({
         offset:'30%'
+    });
+
+    $('.about_cert').smoove({
+        offset:'30%',
+        moveX:'-150%'
     });
 
     $('.box1').smoove({
@@ -37,10 +44,7 @@ $(function(){
         offset:'20%'
     });
 
-    $('.about_cert').smoove({
-        offset:'30%',
-        moveX:'-150%'
-    });
+   
 
 
 /*     $("nav>ul>li").on({
