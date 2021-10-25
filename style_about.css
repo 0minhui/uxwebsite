@@ -230,10 +230,11 @@ footer nav a:hover{
 }
 .about_02_orgdes p{
     text-align: center;
-    margin: auto;
-}
+     margin: auto;
+} 
 .about_02_orgdes div{
-    width: 80%;
+    white-space: nowrap;  /* 強制單行不要換行 */
+    width: 90%;
     color: #474747;
     box-shadow: 0px 0px 0px;
     line-height: 1.9rem;
