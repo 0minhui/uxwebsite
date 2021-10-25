@@ -576,33 +576,20 @@ footer nav a:hover{
     width: 4.8rem;
     border-style: solid; 
 }
-#gotop{
-    display: none;
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    width: 75px;
-    height: 40px;
-    cursor: pointer; /* 游標過去手的形狀 */
-    background-color: #042a6bbd;
-    
-    line-height: 40px;
-    text-align: center;
-    border-radius: 100px;
-}
+
 #gotop{
     display: none;
     position: fixed;
     bottom: 50px;
     right: 50px;
     width: 60px;
-    height: 40px;
+    height: 60px;
     cursor: pointer; /* 游標過去手的形狀 */
-    background-color: #4d4d4dbd;
-    
-    line-height: 40px;
+    background-color: #797979bd;
+    line-height: 60px;
     text-align: center;
     border-radius: 100px;
+    letter-spacing: 0.1rem;
 }
 #gotop:hover{
     background-color: #1f1f1fbd;
