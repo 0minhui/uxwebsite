@@ -334,6 +334,7 @@ header nav a:hover{
 .about_cert figure{
     margin:0 15px 0 25px;
     position: relative;
+    box-shadow: 5px 5px 4px rgba(132, 137, 153, 0.699);
     
 }
 .about_cert figure p{ /*同標題背景*/
