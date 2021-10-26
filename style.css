@@ -238,26 +238,21 @@ header nav a:hover{
    
 }
 .aboutux a{
-    display: block;  /* 改變尺寸 才可以is區塊 */
-    /* 文字按鈕 比較需要用rem(跟文字有關的單位) */
-    width: 5.5rem;  /* 用rem用意防止放大跑版 */
-   /*  height:2rem; */
+    display: block;
+    width: 5.5rem; 
     padding: 0px 2px;
     border: 1px solid #96b3d4 ;
     border-radius: 5px;
-    /* font-weight: bold; */
     font-size: 1rem;
-    
     margin:20px 0px 20px 70%; /* 讓a整個置中  auto左右置中 */
-
     text-align: center; /* 文字more置中 */
     text-decoration: none;
     color: #96b3d4;  
-    
 }
 .aboutux a:hover{
     color: #ffffff;
     border: 1px solid #ffffff ;
+    
 }
 /* .aboutux div{
     display: flex;
@@ -308,6 +303,23 @@ header nav a:hover{
     height: 30vh; /* 證照框高度 */
     margin-right: 30px;
 }
+.more{
+    display: block;
+    width: 5.5rem; 
+    padding: 2px 2px 5px;
+    border: 1px solid rgb(26,51,100,0.88) ;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin:20px 5px 5px 20px; 
+    text-align: center; /* 文字more置中 */
+    text-decoration: none;
+    color: rgb(26,51,100,0.88);  
+}
+.more:hover{
+    color: #838383;
+    border: 1px solid #838383 ;
+}
+
 .about_cert h2{ /* 標題 */
     border-bottom:2px solid rgb(26,51,100,0.88);
     text-shadow: 3px 2px 1px #c2c2c2;
@@ -319,10 +331,36 @@ header nav a:hover{
     display: flex;
     justify-content: flex-end;
 }
-.about_cert img{
-    
+.about_cert figure{
     margin:0 15px 0 25px;
-    /* border-radius: 25px; */
+    position: relative;
+    
+}
+.about_cert figure p{ /*同標題背景*/
+    display: block;
+    background-color:rgba(24, 48, 97, 0);
+    color: #ffffff00;
+    padding: 0.3rem 0.9rem;
+    text-decoration: none;
+    text-align: center;
+    width: 11.5rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+
+    
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+.about_cert figure:hover p{
+    background-color:rgba(15, 32, 66, 0.76);
+    color: #ffffff;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    height: 100%;
+    padding-top: 70px;
+    
 }
 /* -------------------------about us區-------------------  */
 /* -------------------------product區--------------- */
