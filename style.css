@@ -488,16 +488,12 @@ header nav a:hover{
     position: relative; 
     width: 100%;
     margin: auto;
-  
 }
-
 .con2,.con3{
     background-color: rgba(255, 255, 255, 0.707);
     height: 250px;
-    /* width: 18%; */
     border-radius: 15px;
 }
-
 #contact h1,#contact h3{
     margin-left: 15px;
     margin-top: 15px;
@@ -508,7 +504,6 @@ header nav a:hover{
     margin-left: 20px;
     margin-bottom: 10px;
     width: 200px;
-   /*  color:#203864; */
     letter-spacing: 0.3rem;
     font-size: 2rem;
 }
@@ -523,7 +518,6 @@ header nav a:hover{
 #contact P{
     font-size: 1rem;
     margin: 5px 20px 15px;
-    /* color:#464646; */
 }
 #contact iframe{
     border-radius: 15px;
@@ -538,8 +532,17 @@ footer{
     display: flex;
     margin: auto;
     padding:25px 0;
-    /* padding-left: 140px; */
     justify-content: space-between; 
+}
+.footer_list div{
+    width: 25%;
+}
+.footer_list h1{
+    margin: 11px 0px 10px;
+}
+footer img{
+    width: 75%;
+    margin: auto;
 }
 .footer_policy li{
     list-style-type: none; 
@@ -555,22 +558,20 @@ footer{
     color:#abafb8 ;
     border-left: 5px solid transparent;
     padding-left: 5px ;
-   
 }
 .footer_policy a:hover{
     color:#053486c2 ;
     border-left: 5px solid #053486c2 ;
     padding-left: 5px;
 }
-footer img{
-    width: 200px;
-}
 footer nav{
+    width: 75%;
     margin-top: 4px;
     display: flex;
 }
 footer nav ul{
-    margin: 0 30px;
+    margin: 100%;
+    margin: 0 5%;
 }
 footer nav li{
     margin:5px 0;
@@ -579,7 +580,6 @@ footer nav li{
 }
 footer nav a{
     font-size: 1rem;
-    
     font-weight: 500;
     color:#848992 ;
     border-left: 5px solid transparent;
@@ -611,6 +611,7 @@ footer nav a:hover{
     width: 4.8rem;
     border-style: solid; 
 }
+/* ----------------------------------------------------- */
 
 #gotop{
     display: none;
@@ -628,12 +629,10 @@ footer nav a:hover{
 }
 #gotop:hover{
     background-color: #1f1f1fbd;
-
 }
 #gotop p{
     text-align: center;
     font-size: 1.1rem;
-    /* letter-spacing: rem; */
     font-weight: 700;
     color:#fff;
 }
