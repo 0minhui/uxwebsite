@@ -592,9 +592,9 @@ footer nav a:hover{
     margin: auto;
     border-top: 1px dotted rgb(182, 182, 182);
     text-align: center;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 1rem;
-    color: #707070 ;
+    color: #abafb8 ;
     padding: 15px;
     width: 60%;
 }
