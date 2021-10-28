@@ -124,9 +124,9 @@ header nav a:hover{
     font-weight: 500;
     color:#e6effcda;
     letter-spacing: 0.5rem;
-    text-shadow: 5px 2px 3px #303335;
+    text-shadow: 5px 2px 3px #1d1d1d;
     animation: slogn1 2s ;
-    /* font-family: 'Noto Serif TC', serif; */
+    
 }
 @keyframes slogn1{
     from{opacity: 0.1;}
@@ -137,9 +137,9 @@ header nav a:hover{
    font-weight: 500;
    color:#e6effcda;
    letter-spacing: 0.5rem;
-   text-shadow: 2px 2px 2px #303335;
+   text-shadow: 4px 2px 3px #1d1d1d;
    animation: slogn2 1s 1s backwards;
-   /* font-family: 'Noto Serif TC', serif; */
+  
 }
 @keyframes slogn2{
     from{opacity: 0;}
@@ -156,6 +156,8 @@ header nav a:hover{
     bottom: 40px; 
     left: 0;
     animation: news1 2s 1s backwards;
+    border-radius: 0px 25px 25px 0px;
+    overflow: hidden;
 }
 @keyframes news1{
     from{left: -250%;}
@@ -173,19 +175,21 @@ header nav a:hover{
     bottom: 40px; 
     right: 0;
     animation: news2 2s 1s backwards;
+    border-radius: 25px 0px 0px 25px;
+    overflow: hidden;
 }
 @keyframes news2{
     from{right: -250%;}
     to{right: 0;}
 }
 .video1{
-    height: 100%;  /* 這句話一定要加 */
-    object-fit: contain;  /* 內容一定會出現 */
+    height: 100%;  
+    object-fit: contain;  
     overflow: hidden;
 }
 .video2{
-    height: 100%;  /* 這句話一定要加 */
-    object-fit: contain;  /* 內容一定會出現 */
+    height: 100%;
+    object-fit: contain;  
     overflow: hidden;
 }
 /* -------------------------head_news區--------------------- */
@@ -200,9 +204,6 @@ header nav a:hover{
     background-attachment: fixed;
     
 }
-/* #about div{
-   /* height: 70vh; */ /* 原本給兩個區塊一半各50vh 大小 
-} */
 .iso27001{
     width: 200px;
 }
@@ -215,7 +216,7 @@ header nav a:hover{
     align-items: flex-start;
     justify-content: flex-end;
     height: 100vh;
-    /* background-color: rgba(150, 150, 150, 0.39); */
+    
     background-color: rgba(196, 202, 214, 0.52); 
 }
 
@@ -490,7 +491,7 @@ header nav a:hover{
 .con2,.con3{
     background-color: rgba(255, 255, 255, 0.707);
     height: 250px;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 #contact h1,#contact h3{
     margin-left: 15px;
@@ -518,7 +519,7 @@ header nav a:hover{
     margin: 5px 20px 15px;
 }
 #contact iframe{
-    border-radius: 15px;
+    border-radius: 20px;
 }
 /* -------------------------footert區--------------------- */
 footer{

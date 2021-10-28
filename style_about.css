@@ -48,11 +48,10 @@ a,p,h1,h2,h3{
 header{
     background-color: #ffffffc9;
     box-shadow: 0px 0px 6px #a7a7a7;
-    position: fixed;/* 加了才浮在上面 */
+    position: fixed;
     top: 0; 
     width: 100%;
     display: flex; 
-    /* position: relative; */
     align-items: center;
     height: 9vh; 
     z-index: 999;
@@ -259,7 +258,7 @@ footer nav a:hover{
 }
 .about_02_org img{
     margin: auto;
-    width: 518px;
+    width: 80%;
 }
 .about_02_orgdes p{
     text-align: center;
