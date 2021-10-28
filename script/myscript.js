@@ -28,7 +28,7 @@ $(function(){
 
 
     $('.box').smoove({
-        offset:'40%'
+        offset:'50%'
     });
 
     $('.about_cert').smoove({
