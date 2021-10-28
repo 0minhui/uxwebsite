@@ -27,9 +27,8 @@ $(function(){
     });
 
 
-
     $('.box').smoove({
-        offset:'30%'
+        offset:'40%'
     });
 
     $('.about_cert').smoove({
@@ -40,6 +39,8 @@ $(function(){
     $('.box1').smoove({
         offset:'10%'
     });
+
+
     $('.box2').smoove({
         offset:'20%'
     });
@@ -47,18 +48,18 @@ $(function(){
    
 
 
-/*     $("nav>ul>li").on({
+/*     $("header>nav>ul>li").on({
         mouseover:function(){
         $(this).css("background-color","#48405f");
-        $(this).children('.menu_list').stop().slideDown();
+        $(this).children("div").stop().slideDown();
         },
         mouseout:function(){
         $(this).css("background-color", "#AB2A4C");
-        $(this).children('.menu_list').stop().slideUp();
+        $(this).children("div").stop().slideUp();
         },
         click:function(){
-        $(this).css("background-color", "#920DOD");
-        }
+        $(this).css("background-color", "#920DOD"); 
+        } 
     }); */
     
 });
