@@ -27,7 +27,7 @@ $(function(){
     });
 
 
-    $('.box').smoove({
+    $('.aboutux').smoove({
         offset:'50%'
     });
 
