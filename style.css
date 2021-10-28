@@ -222,6 +222,7 @@ header nav a:hover{
 }
 
 .aboutux div{
+    display: none;
     margin: 0 14% 0 10%;  /* 高度改了與上邊距離 */
     /* background-color: rgba(255, 255, 255, 0.6); */
     background-color: rgb(26,51,100,0.98);
