@@ -92,6 +92,7 @@ header nav li{
     letter-spacing: 0.1rem;
     font-weight: 500;
     color: dimgrey;
+    transition: 0.2s ease-in;
 }
 .dropdown a:hover{
     color: #053486c2;
@@ -107,6 +108,7 @@ header nav li{
     min-width: 99px;
     box-shadow: 1px 1px 5px  rgb(117, 120, 131);
     z-index: 1;
+    transition: 0.4s ease-in;
 }
 .dropdown-content a {
     color: rgb(94, 94, 94);
@@ -115,6 +117,7 @@ header nav li{
     text-decoration: none;
     display: block;
     text-align: left;
+    transition: 0.2s ease-in;
 }
 .dropdown:hover .dropdown-content {
     display: block;
@@ -161,11 +164,13 @@ footer img{
     color:#abafb8 ;
     border-left: 5px solid transparent;
     padding-left: 5px ;
+    transition: 0.4s ease;
 }
 .footer_policy a:hover{
     color:#053486c2 ;
     border-left: 5px solid #053486c2 ;
     padding-left: 5px;
+    
 }
 footer nav{
     width: 75%;
@@ -187,11 +192,13 @@ footer nav a{
     color:#848992 ;
     border-left: 5px solid transparent;
     padding-left: 5px;
+    transition: 0.4s ease;
 }
 footer nav a:hover{
     color:#053486c2 ;
     border-left: 5px solid #053486c2;
     padding-left: 5px;
+   
 }
 .footer_copyright{
     margin: auto;

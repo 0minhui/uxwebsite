@@ -93,6 +93,7 @@ header nav a{
     letter-spacing: 0.1rem;
     font-weight: 500;
     color: dimgrey;
+    transition: 0.2s ease;
 }
 header nav a:hover{
     color: #053486c2;
@@ -222,7 +223,7 @@ header nav a:hover{
 }
 
 .aboutux div{
-    display: none;
+ 
     margin: 0 14% 0 10%;  /* 高度改了與上邊距離 */
     /* background-color: rgba(255, 255, 255, 0.6); */
     background-color: rgb(26,51,100,0.98);
@@ -248,7 +249,8 @@ header nav a:hover{
     margin:20px 0px 20px 70%; /* 讓a整個置中  auto左右置中 */
     text-align: center; /* 文字more置中 */
     text-decoration: none;
-    color: #96b3d4;  
+    color: #96b3d4;
+    transition: 0.4s ease;
 }
 .aboutux a:hover{
     color: #ffffff;
@@ -311,6 +313,7 @@ header nav a:hover{
     text-align: center; /* 文字more置中 */
     text-decoration: none;
     color: rgba(97, 123, 175, 0.808);  
+    transition: 0.4s ease;
 }
 .more:hover{
     color: #838383;
@@ -332,28 +335,25 @@ header nav a:hover{
     margin:0 15px 0 25px;
     position: relative;
     box-shadow: 5px 5px 4px rgba(132, 137, 153, 0.699);
-    
+   
 }
 .about_cert figure p{ /*同標題背景*/
     display: block;
-    background-color:rgba(24, 48, 97, 0);
-    color: #ffffff00;
-    padding: 0.3rem 0.9rem;
+    background-color:rgba(255, 255, 255, 0) ;
+    color: #ffffff00 ;
+    font-size: 0rem;
+    height: 0%;
     text-decoration: none;
     text-align: center;
-    width: 11.5rem;
-    letter-spacing: 0.1rem;
-    font-size: 1.1rem;
-    font-weight: 400;
-
-    
     width: 100%;
+    transition: 0.4s ease;
     position: absolute;
-    bottom: 0px;
+    top: 0px;
 }
 .about_cert figure:hover p{
     background-color:rgba(15, 32, 66, 0.76);
     color: #ffffff;
+    font-weight: 300;
     font-size: 1.2rem;
     line-height: 2rem;
     height: 100%;
@@ -421,10 +421,12 @@ header nav a:hover{
     background-color: #e3e6ec71;
     position: relative;
     border-radius: 0px;
+    
 }
 .product_intro figure img{
     
     opacity: .4;
+    transition: 0.4s ease-in-out;
 }
 .product_intro figure:hover img{
     opacity: 1;
@@ -441,6 +443,8 @@ header nav a:hover{
     letter-spacing: 0.1rem;
     font-size: 1.1rem;
     font-weight: 400;
+    transition: 0.4s ease-in-out;
+   
 }
 .product_intro figure:hover p{
     background-color: rgb(26,51,100,0.48);
@@ -559,6 +563,7 @@ footer img{
     color:#abafb8 ;
     border-left: 5px solid transparent;
     padding-left: 5px ;
+    transition: 0.4s ease;
 }
 .footer_policy a:hover{
     color:#053486c2 ;
@@ -585,6 +590,7 @@ footer nav a{
     color:#848992 ;
     border-left: 5px solid transparent;
     padding-left: 5px;
+    transition: 0.4s ease;
 }
 footer nav a:hover{
     color:#053486c2 ;
@@ -627,6 +633,7 @@ footer nav a:hover{
     text-align: center;
     border-radius: 100px;
     letter-spacing: 0.1rem;
+    transition: 0.4s ease;
 }
 #gotop:hover{
     background-color: #1f1f1fbd;
