@@ -253,7 +253,7 @@ header nav a:hover{
 /* 手機 */
 @media (max-width: 767px) {
     .head_slogn{
-        margin-top: 190px; 
+        margin-top: 170px; 
     }
     .slogn1{
         font-size: 1.7rem;
@@ -343,7 +343,7 @@ header nav a:hover{
         height: 30vh;
         border-radius: 0px 0px 0px 0px;
         justify-content: center;
-        bottom: 120px; 
+        bottom: 135px; 
     }
     @keyframes news1{
         from{left: -100%;}
@@ -354,7 +354,7 @@ header nav a:hover{
     }
     .news2{
         display:none;
-        bottom: 120px; 
+        bottom: 135px; 
     }
     .video2{
         display:none;
@@ -986,7 +986,7 @@ header nav a:hover{
         width: 98%;
     }   
     #contact P{
-        font-size: 1rem;
+        font-size: 0.9rem;
 
         white-space:normal!important;
 	    word-break:break-all!important;
@@ -1142,8 +1142,9 @@ footer nav a:hover{
         text-align: left;
     }
     .footer_copyright{
-        font-weight: 100;
-        font-size: 0.9rem;
+        font-weight: 300;
+        font-size: 1rem;
+        color: rgb(48, 48, 48);
         width: 100%;
     }
     #gotop{
