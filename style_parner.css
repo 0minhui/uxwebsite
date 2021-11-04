@@ -316,7 +316,6 @@ header nav li{
     display: none;
     position: absolute;
     /* margin-top: 2.8vh; */
-    background-color: #ffffffc9;
     min-width: 100%;
     box-shadow: 1px 1px 5px  rgb(117, 120, 131);
     z-index: 1;
@@ -330,6 +329,7 @@ header nav li{
     display: block;
     text-align: center;
     transition: 0.2s ease-in;
+    background-color: #ffffffc9;
 }
 .min_dropdown:hover .min_dropdowncontent{
     display: block;
@@ -510,7 +510,7 @@ footer nav a:hover{
 /* ----------------------------------------------------- */
 /* --------------------內頁區------------- */
 .parner{
-    width: 60%;
+    /* width: 60%; */
     margin:12vh auto;
 }
 .parner h1{
@@ -525,7 +525,7 @@ footer nav a:hover{
     background-color: #ffffffa1;
     margin: 20px auto;
     /* border:1px solid rgb(83, 83, 83); */
-    padding: 60px 40px ;
+    /* padding: 60px 40px ; */
     box-shadow: 0px 0px 3px #7a7a7a;
     border-radius: 20px;
 }
@@ -538,7 +538,7 @@ footer nav a:hover{
 }
 .parner  p{
     color: #474747;
-    margin: 25px 200px;
+    /* margin: 25px 200px; */
     line-height: 1.9rem;
     text-align: justify;
 }
@@ -576,3 +576,45 @@ footer nav a:hover{
     font-size: 1rem;
     text-align: center;
 }
+
+/* -------------------RWD------------ */
+/* 手機 */
+@media (max-width: 767px) {
+    .parner{
+     width: 90%;
+    }
+    .parner  p{
+     margin: 10px 40px;
+    }
+    .parner div{
+     padding: 20px 2px ;
+    }
+ }
+ /* 平板 */
+ @media (min-width: 768px) {
+     .parner{
+         width: 90%;
+        }
+     .parner  p{
+         margin: 10px 40px;
+     }
+     .parner div{
+         padding: 20px 20px ;
+     }
+     
+     
+ }
+ /* 桌機 */
+ @media (min-width: 992px) {
+     .parner{
+         width: 60%;
+        }
+     .parner  p{
+        margin: 25px 200px;
+     }
+     .parner div{
+        padding: 40px 40px ;
+     }
+     
+ } 
+    /* -------------------RWD------------ */
