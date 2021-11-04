@@ -27,9 +27,10 @@ $(function(){
     });
 
 
-    $('.box').smoove({
-        offset:'50%'
-    });
+
+    $('.aboutuxdiv').smoove({
+        offset:'40%',
+    });  
 
     $('.about_cert').smoove({
         offset:'30%',
@@ -46,6 +47,11 @@ $(function(){
     });
 
    
+        $("h5").click(function(){
+            $('.minnav').fadeToggle("fast");
+            
+        })
+
 
 
 /*     $("header>nav>ul>li").on({
