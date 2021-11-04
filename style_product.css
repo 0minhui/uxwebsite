@@ -48,24 +48,22 @@ a,p,h1,h2,h3{
 header{
     background-color: #ffffffc9;
     box-shadow: 0px 0px 6px #a7a7a7;
-    position: fixed;/* 加了才浮在上面 */
-    top: 0;
+    position: fixed;
+    top: 0; 
     width: 100%;
     display: flex; 
-    /* position: relative; */
     align-items: center;
     height: 9vh; 
     z-index: 999;
+
+    position: relative;
 }
 header h1{ 
     margin-left: 30px;
     margin-right: 20px;
     width: 280px;   
 }
-header h2{
-    margin-right: 30px;
-    width: 200px; 
-}
+
 header h3{
     width: 70px;
     margin-right: 12px;
@@ -73,6 +71,10 @@ header h3{
 header h4{
     width: 70px;
     margin-right: 10px;
+}
+header h5{ 
+    margin-right: 10px;
+    width: 4.5%;   
 }
 header nav{
     width: 90%;
@@ -96,14 +98,161 @@ header nav li{
 }
 .dropdown a:hover{
     color: #053486c2;
-    padding-bottom: 2.2vh;
+    /* padding-bottom: 2.2vh; */
     border-bottom: 4px solid #053486c2 ;
 }
+
+
+/* -------------------RWD------------ */
+/* 手機 */
+@media (max-width: 767px) {
+    header{
+        height: 6vh;
+    }
+    header h2{
+        display: none;
+       /* width: 30%;
+       margin-right: 10px; */
+    }
+    header nav{
+        display: none;
+        width: 20%;
+    }
+    header nav ul{
+        
+        display: flex;
+        flex-direction: column;
+        margin-left: 40%;
+    }
+    header nav a{
+        font-size: 1rem;
+    }
+    header nav a:hover{
+        color: #053486c2;
+        padding-bottom: 0vh;
+        border-bottom: 0px solid #053486c2 ;
+    }
+    header h1{ 
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 40%;   
+    }
+    header h3{
+        width: 8%;  
+        margin-right: 12px;
+    }
+    header h4{
+        width: 8%; 
+        margin-right: 10px;
+    }
+    header h5{ 
+        display: block;
+        width: 40%;
+        font-size:  1.6rem ;
+        color: #979797e8;
+       /*  padding: 0 4px;*/
+       text-align: right;
+         /* border: 1px solid #333333;  */
+    }
+    .minnav {
+        display: none;
+    }
+    .dropdown a:hover{
+        padding-bottom: 0vh;
+        border-bottom: 0px solid #053486c2 ;
+    }
+    .dropdown-content {
+        margin-top: 0vh;
+    }
+}
+/* 平板 */
+@media (min-width: 768px) {
+ 
+    header{
+        height: 6vh;
+    }
+    header h2{
+        width:25%;
+        margin-right: 20px;
+    }
+    header h1{ 
+        margin-left: 20px;
+        margin-right: 10px;
+        width: 40%;   
+    }
+    header h3{
+        width: 8%;  
+        margin-right: 12px;
+    }
+    header h4{
+        width: 8%; 
+        margin-right: 10px;
+    }
+    header h5{ 
+        display: none;
+    }
+    .minnav {
+        
+        display: none;
+    }
+    .dropdown a:hover{
+        padding-bottom: 1vh;
+    }
+    .dropdown-content {
+        margin-top: 1.5vh;
+    }
+}
+/* 桌機 */
+@media (min-width: 992px) {
+    header nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+    header{
+        height: 9vh;
+    }
+    header h2{
+        width:12%;
+        margin-right: 30px;
+    }
+    header h1{ 
+        margin-left: 30px;
+        margin-right: 20px;
+        width: 18%;   
+    }
+    header h3{
+        width: 4.5%;  
+        margin-right: 12px;
+    }
+    header h4{
+        width: 4.5%; 
+        margin-right: 10px;
+    }
+    header h5{ 
+        display: none;
+        
+    }
+    .minnav {
+        
+        display: none;
+    }
+    .dropdown a:hover{
+        padding-bottom: 2.2vh;
+    }
+    .dropdown-content {
+        margin-top: 2.8vh;
+    }
+} 
+/* -------------------RWD------------ */
 /* --------------------------下拉選單區-------------------------- */
+.dropdown{
+   /*  position: relative; */
+   
+}
 .dropdown-content {
     display: none;
     position: absolute;
-    margin-top: 2.8vh;
+    /* margin-top: 2.8vh; */
     background-color: #ffffffc9;
     min-width: 99px;
     box-shadow: 1px 1px 5px  rgb(117, 120, 131);
@@ -127,6 +276,68 @@ header nav li{
     color: #ffffff;
     border-bottom:0px solid  #ffffff00 ;  
     padding: 7px 10px 7px 10px;
+}
+
+
+.min_dropdown a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    color: dimgrey;
+    transition: 0.2s ease-in;
+}
+.min_dropdown a:hover{
+    color: #053486c2;
+}
+.minnav {
+    position: absolute;
+    width: 100%;
+    display: none;
+}
+.minnav ul {
+    display: flex ;
+    list-style-type: none;
+}
+.minnav li{
+    position: relative ;
+    flex: 1 ;
+    height: 5vh;
+    text-decoration: none;
+}
+.minnav a{
+    display: block;
+    background-color: #ffffffc9;
+    box-shadow: 0px 0px 6px #a7a7a7;
+    text-align: center;
+    text-decoration: none;
+}
+.min_dropdowncontent {
+    display: none;
+    position: absolute;
+    /* margin-top: 2.8vh; */
+    background-color: #ffffffc9;
+    min-width: 100%;
+    box-shadow: 1px 1px 5px  rgb(117, 120, 131);
+    z-index: 1;
+    transition: 0.4s ease-in;
+}
+.min_dropdowncontent a {
+    color: rgb(94, 94, 94);
+    font-size: 1rem;
+    padding: 2px 10px 2px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    transition: 0.2s ease-in;
+}
+.min_dropdown:hover .min_dropdowncontent{
+    display: block;
+}
+.min_dropdowncontent a:hover {
+    background-color: #053486c2;
+    color: #ffffff;
+    padding: 2px 10px 2px 10px;
 }
 /* -------------------------footert區--------------------- */
 footer{
@@ -221,6 +432,83 @@ footer nav a:hover{
     width: 4.8rem;
     border-style: solid; 
 }
+/* -------------------RWD------------ */
+/* 手機 */
+@media (max-width: 767px) {
+    .footer_list div{
+        width: 40%;
+    }
+    .footer_list{
+        width: 80%;
+    }
+    footer img{
+        width: 100%;
+    }
+    footer nav{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+    }
+    .footer_policy a{
+        font-size: 0.9rem;
+        padding-left: 0px;
+        text-align: left;
+    }
+    .footer_copyright{
+        font-weight: 100;
+        font-size: 0.9rem;
+        width: 100%;
+    }
+    #gotop{
+        bottom: 20px;
+        right: 20px;
+    }
+}
+/* 平板 */
+@media (min-width: 768px) {
+    .footer_list{
+        width: 60%;
+    }
+    .footer_list div{
+        width: 60%;
+    }
+    footer nav{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20%;
+    }
+    footer img{
+        width: 100%;
+    }
+    #gotop{
+        bottom: 50px;
+        right: 50px;
+    }
+    
+}
+/* 桌機 */
+@media (min-width: 992px) {
+    .footer_list{
+        width: 55%;
+    }
+    .footer_list div{
+        width: 40%;
+    }
+    footer nav{
+        display: flex;
+        flex-direction: row;
+        margin-left: 0%;
+    }
+    footer img{
+        width: 75%;
+    }
+    #gotop{
+        bottom: 50px;
+        right: 50px;
+    }
+    
+} 
+   /* -------------------RWD------------ */
 /* ----------------------------------------------------- */
 /* --------------------內頁區------------- */
 .product{
@@ -267,6 +555,7 @@ footer nav a:hover{
     margin: 25px auto;
     width: 80%;
 }
+
 /* --------------------------------------- */
 .pro_des{
     box-shadow: 0px 0px 3px #bebebe00 !important;
@@ -295,7 +584,7 @@ footer nav a:hover{
 }
 .product_04img img{
     display: block!important;
-    width: 700px !important;
+    width: 90%!important;
 }
 .product div .newsvideo{
     

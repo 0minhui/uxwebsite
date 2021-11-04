@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 0px solid #000 ;  
+   /*  border: 0px solid #000 ;   */
 }
 img{
     width: 100%;
@@ -55,26 +55,26 @@ header{
     display: flex; 
     /* position: relative; */
     align-items: center;
-    height: 9vh; 
+    /* height: 9vh;  */
     z-index: 999;
 }
-header h1{ 
+/* header h1{ 
     margin-left: 30px;
     margin-right: 20px;
-    width: 280px;   
-}
+    width: 18%;   
+} */
 header h2{
     margin-right: 30px;
-    width: 200px; 
+    /* width: 13%;  */
 }
-header h3{
-    width: 70px;
+/* header h3{
+    width: 4.5%;  
     margin-right: 12px;
 }
 header h4{
-    width: 70px;
+    width: 4.5%; 
     margin-right: 10px;
-}
+} */
 header nav{
     width: 90%;
 }
@@ -100,6 +100,102 @@ header nav a:hover{
     padding-bottom: 10px;
     border-bottom: 4px solid #053486c2 ;
 }
+   /* -------------------RWD------------ */
+/* 手機 */
+@media (max-width: 767px) {
+    header{
+        height: 13vh;
+    }
+    header h2{
+        display: none;
+    }
+    header nav{
+        width: 20%;
+    }
+
+    header nav ul{
+        display: flex;
+        flex-direction: column;
+        margin-left: 40%;
+    }
+    header nav a{
+        font-size: 1rem;
+        
+    }
+    header nav a:hover{
+        color: #053486c2;
+        padding-bottom: 0px;
+        border-bottom: 0px solid #053486c2 ;
+    }
+    header h1{ 
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 40%;   
+    }
+    header h3{
+        width: 8%;  
+        margin-right: 12px;
+    }
+    header h4{
+        width: 8%; 
+        margin-right: 10px;
+    }
+}
+/* 平板 */
+@media (min-width: 768px) {
+ 
+    header{
+        height: 6vh;
+    }
+    header h2{
+        width:25%;
+    }
+    
+    header h1{ 
+        margin-left: 20px;
+        margin-right: 10px;
+        width: 40%;   
+    }
+    header h3{
+        width: 8%;  
+        margin-right: 12px;
+    }
+    header h4{
+        width: 8%; 
+        margin-right: 10px;
+    }
+}
+/* 桌機 */
+@media (min-width: 992px) {
+    header nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+    header{
+        height: 9vh;
+    }
+    header h2{
+        width:12%;
+    }
+    
+    header h1{ 
+        margin-left: 30px;
+        margin-right: 20px;
+        width: 18%;   
+    }
+    header h3{
+        width: 4.5%;  
+        margin-right: 12px;
+    }
+    header h4{
+        width: 4.5%; 
+        margin-right: 10px;
+    }
+    
+} 
+   /* -------------------RWD------------ */
+
+
 /* -------------------------head_news區--------------------- */
 .head_news{
     background-image: url("./images/head_bg1.png");
@@ -121,13 +217,17 @@ header nav a:hover{
 }
 .slogn1{
     font-size: 3.5rem;
-    margin-bottom: 45px;
+    margin: 0 20px 45px;
+   
     font-weight: 500;
     color:#e6effcda;
     letter-spacing: 0.5rem;
     text-shadow: 5px 2px 3px #1d1d1d;
     animation: slogn1 2s ;
     
+    white-space:normal!important;
+	word-break:break-all!important;
+	word-wrap:break-word!important;
 }
 @keyframes slogn1{
     from{opacity: 0.1;}
@@ -140,24 +240,56 @@ header nav a:hover{
    letter-spacing: 0.5rem;
    text-shadow: 4px 2px 3px #1d1d1d;
    animation: slogn2 1s 1s backwards;
-  
+
+    white-space:normal!important;
+	word-break:break-all!important;
+	word-wrap:break-word!important;
 }
 @keyframes slogn2{
     from{opacity: 0;}
     to{opacity: 1;}
 }
+   /* -------------------RWD------------ */
+/* 手機 */
+@media (max-width: 767px) {
+    .slogn1{
+        font-size: 1.8rem;
+    }
+    .slogn2{
+        font-size: 1.2rem;
+    }
+   }
+   /* 平板 */
+   @media (min-width: 768px) {
+    .slogn1{
+        font-size: 2rem;
+    }
+    .slogn2{
+        font-size: 1.7rem;
+    }
+   }
+   /* 桌機 */
+    @media (min-width: 992px) {
+        .slogn1{
+            font-size: 3.5rem;
+        }
+        .slogn2{
+            font-size: 2.5rem;
+        }
+   } 
+   /* -------------------RWD------------ */
 .news1{
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     align-items:center; 
-    width: 45%;
+    /* width: 45%; */
     background-color: rgba(21, 27, 51, 0.505);
-    height: 30vh;  /* 支撐影片高度 */
+    /* height: 30vh;  */ /* 支撐影片高度 */
     position: absolute;  
-    bottom: 40px; 
+    /* bottom: 40px; */ 
     left: 0;
     animation: news1 2s 1s backwards;
-    border-radius: 0px 25px 25px 0px;
+    /* border-radius: 0px 25px 25px 0px; */
     overflow: hidden;
 }
 @keyframes news1{
@@ -166,17 +298,17 @@ header nav a:hover{
 }
 .news2{
     display: flex;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     align-items:center; 
 
-    width: 45%;
+    /* width: 45%; */
     background-color: rgba(21, 27, 51, 0.505);
-    height: 30vh;  /* 支撐影片高度 */
+    /* height: 30vh; */  /* 支撐影片高度 */
     position: absolute;  
-    bottom: 40px; 
+    /* bottom: 40px;  */
     right: 0;
     animation: news2 2s 1s backwards;
-    border-radius: 25px 0px 0px 25px;
+    /* border-radius: 25px 0px 0px 25px; */
     overflow: hidden;
 }
 @keyframes news2{
@@ -184,60 +316,131 @@ header nav a:hover{
     to{right: 0;}
 }
 .video1{
-    height: 100%;  
+    /* height: 100%;   */
     object-fit: contain;  
     overflow: hidden;
 }
 .video2{
-    height: 100%;
+    /* height: 100%; */
     object-fit: contain;  
     overflow: hidden;
 }
+   /* -------------------RWD------------ */
+/* 手機 */
+@media (max-width: 767px) {
+    .news1{
+        width: 100%;
+        height: 30vh;
+        border-radius: 0px 0px 0px 0px;
+        justify-content: center;
+        bottom: 40px; 
+    }
+    @keyframes news1{
+        from{left: -100%;}
+        to{ left: 0;}
+    }
+    .video1{
+        width: 100%;
+    }
+    .news2{
+        display:none;
+        bottom: 40px; 
+    }
+    .video2{
+        display:none;
+    }
+    .video2{
+        width: 100%; 
+    }
+}
+
+/* 平板 */
+@media (min-width: 768px) {
+    .news1{
+        width: 45%;
+        height: 19vh;
+        border-radius: 0px 25px 25px 0px;
+        justify-content: flex-end;
+        bottom: 200px; 
+    }
+    .video1{
+        width: 100%; 
+    }  
+
+    .news2{
+        width: 45%;
+        height: 19vh;
+        border-radius: 25px 0px 0px 25px;
+        justify-content: flex-start;
+        bottom: 200px; 
+    }
+    .video2{
+        width: 100%; 
+    }  
+}
+   /* 桌機 */
+@media (min-width: 992px) {
+    .news1{
+        width: 45%;
+        height: 30vh;
+        border-radius: 0px 25px 25px 0px;
+        justify-content: flex-end;
+        bottom: 40px; 
+    }
+    .video1{
+        height: 100%; 
+        width: auto;
+    }  
+    .news2{
+        justify-content: flex-start;
+        width: 45%;
+        height: 30vh;  /* 支撐影片高度 */
+        border-radius: 25px 0px 0px 25px;
+        bottom: 40px; 
+        
+    }
+    .video2{
+        height: 100%; 
+        width: auto;
+    } 
+} 
+   /* -------------------RWD------------ */
 /* -------------------------head_news區--------------------- */
 /* -------------------------about us區-------------------  */
 #about{
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     position: relative;
     background-image: url(./images/office.jpg); 
     background-size: cover; 
     background-position: center;
     background-attachment: fixed;
-    
 }
+
 .iso27001{
     width: 200px;
 }
 .duns{
     width: 300px;
 }
-.aboutux{ /* 關於往優整個區塊 */
-    
+.aboutux{  /* about 整個區域 */
     display: flex;
     width: 100%;
     align-items: flex-start;
     justify-content: flex-end;
     height: 100vh;
-    
     background-color: rgba(196, 202, 214, 0.52); 
 }
-
-.aboutux div{
- 
-    margin: 0 14% 0 10%;  /* 高度改了與上邊距離 */
-    /* background-color: rgba(255, 255, 255, 0.6); */
+.aboutuxdiv{ /* 深藍區塊 */
+    display: none;
+    /* margin: 0 14% 0 10%;  */
     background-color: rgb(26,51,100,0.98);
     box-shadow: 3px 3px 10px rgba(68, 68, 68, 0.799);
-    
     border-radius:0 0 35px 35px;
-    /* box-shadow: 1px 1px 8px #313131; */
-    height: 92vh;   /* 白背景長度 */
-    /* width: 39%; */
-
+    /* height: 92vh;   */ 
     display: flex;
     flex-direction: column;
     justify-content: center;
-   
 }
 .aboutux a{
     display: block;
@@ -255,51 +458,186 @@ header nav a:hover{
 .aboutux a:hover{
     color: #ffffff;
     border: 1px solid #ffffff ;
-    
 }
 
 .aboutux h1{ /* 標題 */
     text-shadow: 3px 2px 2px rgba(34, 35, 51, 0.699);
-    border-bottom:5px solid rgb(181, 203, 231);
-    padding-bottom: 15px;
-    margin: 100px 80px 25px 70px;
-    width: 300px;
-    letter-spacing: 0.3rem;
-    font-size: 2.2rem;
-    
+    /* border-bottom:5px solid rgb(181, 203, 231); */
+    /* padding-bottom: 15px; */
+    /* margin: 100px 80px 25px 70px; */
+    /* width: 300px; */
+    /* letter-spacing: 0.3rem; */
+    /* font-size: 2.2rem; */
     color: #cfcfcf;
-    /* color:#203864; */
 }
 .aboutux p{
     color: #dddddd;
-    margin: 0 40px 100px 70px;
-    font-size: 1.2rem;
-    line-height: 2.2rem;
-    /* color:#464646; */
+    /* margin: 0 40px 100px 70px; */
+    /* font-size: 1.2rem; */
+    /* line-height: 2.2rem; */
+    
     overflow: auto;
     font-weight: 500;
-   /*  border:1px solid #000; */
+
+    white-space:normal!important;
+	word-break:break-all!important;
+	word-wrap:break-word!important;
 }
 
+   /* -------------------RWD------------ */
+    /* 手機 */
+    @media (max-width: 767px) {
+        #about{
+            height: 110vh;
+        } 
+        .aboutux{
+            height: 110vh;
+        }
+        .aboutuxdiv{ /* 深藍區塊 */
+            margin: 0 3% 0 5%; 
+            height: 71vh;   
+        }
+        .aboutux h1{ /* 標題 */
+            border-bottom:3px solid rgb(181, 203, 231);
+            padding-bottom: 5px;
+            margin: 100px 80px 10px 22px;
+            width: 100px;
+            letter-spacing: 0.3rem;
+            font-size: 1.5rem;
+        }
+        .aboutux p{
+            margin: 0 10px 20px 20px;
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+        .about_cert{
+            width: 90%;
+            bottom: 2%;
+            height: 41vh;   
+        }
+        .duns{
+            display: none;
+        }
+        .iso27001{
+            width: 45%;
+        }
+        .about_cert figure:hover p{
+            padding-top: 30px;
+            font-size: 1rem;
+        }
+        .about_cert h2{
+            
+            color:rgba(26, 51, 100, 0); 
+            border-bottom:2px solid rgba(26, 51, 100, 0);
+            text-shadow: 3px 2px 1px #c2c2c200;
+            margin: 0px 60px 0px 310px;
+        }
+    }
+    /* 平板 */
+    @media (min-width: 768px) {
+        #about{
+            height: 100vh;
+        } 
+        .aboutuxdiv{ /* 深藍區塊 */
+            margin: 0 10% 0 5%; 
+            height: 60vh;   
+        }
+        .aboutux h1{ /* 標題 */
+            border-bottom:5px solid rgb(181, 203, 231);
+            padding-bottom: 15px;
+            margin: 100px 80px 25px 70px;
+            width: 300px;
+            letter-spacing: 0.3rem;
+            font-size: 2.2rem;
+        }
+        .aboutux p{
+            margin: 0 40px 20px 70px;
+            font-size: 1.2rem;
+            line-height: 2.2rem;
+        }
+        .about_cert{
+            width: 98%;
+            
+            bottom: 2%;
+            height: 41vh;   
+        }
+        .duns{
+            display: block;
+        }
+        .about_cert figure:hover p{
+            padding-top: 60px;
+            font-size: 1.2rem;
+        }
+        .about_cert h2{
+            
+            margin: 10px 60px 0px 310px;
+            border-bottom:2px solid rgb(26,51,100,0.88);
+            text-shadow: 3px 2px 1px #c2c2c2;
+            color:rgb(26,51,100,0.88);
+        }
+     }
+    /* 桌機 */
+     @media (min-width: 992px) {
+        #about{
+            height: 100vh;
+        } 
+        .aboutuxdiv{ /* 深藍區塊 */
+             margin: 0 14% 0 10%; 
+             height: 92vh;   
+         }
+         .aboutux h1{ /* 標題 */
+             border-bottom:5px solid rgb(181, 203, 231);
+             padding-bottom: 15px;
+             margin: 100px 80px 25px 70px;
+             width: 300px;
+             letter-spacing: 0.3rem;
+             font-size: 2.2rem;
+         }
+         .aboutux p{
+             margin: 0 40px 100px 70px;
+             font-size: 1.2rem;
+             line-height: 2.2rem;
+         }
+         .about_cert{
+            width: 47%;
+            bottom: 14%;
+            height: 45vh;   
+        }
+        .duns{
+            display: block;
+        }
+        .about_cert figure:hover p{
+            padding-top: 60px;
+            font-size: 1.2rem;
+        }
+        .about_cert h2{
+            
+            margin: 10px 60px 0px 310px;
+            border-bottom:2px solid rgb(26,51,100,0.88);
+            text-shadow: 3px 2px 1px #c2c2c2;
+            color:rgb(26,51,100,0.88);
+        }
+    } 
+    /* -------------------RWD------------ */
+
 .about_cert{
-    /* background-color: rgba(216, 216, 216, 0.486); */
     background-color: rgb(201,225,255,0.8);
     box-shadow: 2px 2px 6px rgba(128, 128, 128, 0.699);
-    width: 47%;
+    /* width: 47%; */
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
     border-radius:0 35px 35px 0px ;
     position: absolute;
-    left: 0%;
-    bottom: 14%;
-    height: 45vh;   
+    left:0;
+    /* bottom: 14%; */
+    /* height: 45vh;    */
 }
 .about_cert div{ /* 證照排版區 */
     align-items: flex-end;
     display: flex;
-    height: 30vh; /* 證照框高度 */
+    height: 30vh; 
     margin-right: 30px;
 }
 .more{
@@ -310,7 +648,7 @@ header nav a:hover{
     border-radius: 5px;
     font-size: 1rem;
     margin:20px 5px 5px 20px; 
-    text-align: center; /* 文字more置中 */
+    text-align: center; 
     text-decoration: none;
     color: rgba(97, 123, 175, 0.808);  
     transition: 0.4s ease;
@@ -319,15 +657,14 @@ header nav a:hover{
     color: #838383;
     border: 1px solid #838383 ;
 }
-
 .about_cert h2{ /* 標題 */
-    border-bottom:2px solid rgb(26,51,100,0.88);
-    text-shadow: 3px 2px 1px #c2c2c2;
+    /* border-bottom:2px solid rgb(26,51,100,0.88);
+    text-shadow: 3px 2px 1px #c2c2c2; */
     padding:0px 0 10px 0;
-    margin: 10px 60px 0px 310px;
+    /* margin: 10px 60px 0px 310px; */
     letter-spacing: 0.3rem;
     font-size: 1.5rem;
-    color:rgb(26,51,100,0.88); 
+    /* color:rgb(26,51,100,0.88);  */
     display: flex;
     justify-content: flex-end;
 }
@@ -335,10 +672,9 @@ header nav a:hover{
     margin:0 15px 0 25px;
     position: relative;
     box-shadow: 5px 5px 4px rgba(132, 137, 153, 0.699);
-   
 }
-.about_cert figure p{ /*同標題背景*/
-    display: block;
+.about_cert figure p{ 
+    
     background-color:rgba(255, 255, 255, 0) ;
     color: #ffffff00 ;
     font-size: 0rem;
@@ -349,26 +685,23 @@ header nav a:hover{
     transition: 0.4s ease;
     position: absolute;
     top: 0px;
-}
+    /* display: none; */
+} 
 .about_cert figure:hover p{
+    /* display: block; */
     background-color:rgba(15, 32, 66, 0.76);
     color: #ffffff;
     font-weight: 300;
-    font-size: 1.2rem;
     line-height: 2rem;
     height: 100%;
-    padding-top: 70px;
     
+
 }
 /* -------------------------about us區-------------------  */
 /* -------------------------product區--------------- */
 #product{
     background-color: #d9dce385;
-    /* background-image: url(./images/product_bg1.gif); 
-    background-size: cover; 
-    background-position: center;
-    background-attachment: fixed; */
-    height: 100vh; 
+    /* height: 100vh;  */
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -398,33 +731,128 @@ header nav a:hover{
     letter-spacing: 0.5rem;
 }
 .product_intro {
-    
-    width: 70%; 
+   /*  width: 70%;  */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 .product_intro a{
-    
     width: 35%;
     margin: 10px;
 }
 .product_intro figure{
-    
     width: 100%;
     margin: auto;
     margin: 0px px;
     overflow: hidden;
-    
-    
     background-color: #e3e6ec71;
     position: relative;
     border-radius: 0px;
-    
 }
+
+/* -------------------RWD------------ */
+/* 手機 */
+@media (max-width: 767px) {
+    #product{
+        height: auto;
+    }
+    .product_intro {
+        width: 80%; 
+        margin-bottom: 20px;
+    }
+    .product_intro a{
+        width: 100%;
+    }
+    .pro_name h1{
+        margin: 11vh 25px 25px;
+    }
+    .pro_name hr{
+        width: 23px;
+    }
+    .product_intro figure p{ 
+        width: 100%;
+    }
+   
+}
+/* 平板 */
+@media (min-width: 768px) {
+    .product_intro {
+        width: 90%; 
+        
+    }
+    .product_intro a{
+        width: 50%;
+    }
+    #product{
+        height: auto;
+    }
+    .product_intro figure .p1{
+        position: absolute;
+        bottom: 0px;
+    }
+    .product_intro figure .p2{
+        position: absolute;
+        bottom: 0px;
+    }
+    .product_intro figure .p3{
+        position: absolute;
+        bottom: 0px;
+    }
+    .product_intro figure .p4{
+        position: absolute;
+        bottom: 0px;
+    }
+    .product_intro figure p{ 
+        width: 100%;
+    }
+    .pro_name h1{
+        margin: 4vh 25px 25px;
+    }
+}
+/* 桌機 */
+@media (min-width: 992px) {
+    #product{
+        height: 100vh;
+    }
+    .product_intro {
+        width: 70%; 
+    }
+    .product_intro a{
+        width: 35%;
+    }
+    .product_intro figure .p1{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+    .product_intro figure .p2{
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+    .product_intro figure .p3{
+        position: absolute;
+        top: 0px;
+        right: 0px; 
+        bottom: auto;
+    }
+    .product_intro figure .p4{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: auto;
+    }
+    .product_intro figure p{ 
+        width: 11.5rem;
+    }
+    .pro_name h1{
+        margin: 0vh 25px 25px;
+    }
+} 
+   /* -------------------RWD------------ */
+
 .product_intro figure img{
-    
     opacity: .4;
     transition: 0.4s ease-in-out;
 }
@@ -432,19 +860,18 @@ header nav a:hover{
     opacity: 1;
     background-color: rgb(255, 255, 255); 
 }
-.product_intro figure p{ /*同標題背景*/
+.product_intro figure p{ 
     display: block;
     background-color:rgb(26,51,100,0.88);
     color: #ffffff;
     padding: 0.3rem 0.9rem;
     text-decoration: none;
     text-align: center;
-    width: 11.5rem;
+   /*  width: 11.5rem; */
     letter-spacing: 0.1rem;
     font-size: 1.1rem;
     font-weight: 400;
     transition: 0.4s ease-in-out;
-   
 }
 .product_intro figure:hover p{
     background-color: rgb(26,51,100,0.48);
@@ -461,7 +888,7 @@ header nav a:hover{
 .f4{
     box-shadow: 1px 1px 8px rgba(123, 127, 134, 0.664);
 }
-.product_intro figure .p1{
+/* .product_intro figure .p1{
     position: absolute;
     bottom: 0px;
     right: 0px;
@@ -480,7 +907,7 @@ header nav a:hover{
     position: absolute;
     top: 0px;
     left: 0px;
-}
+} */
 /* -------------------------contact區--------------------- */
 #contact{
     /* background-image: url(./images/contact_bg.png); */
@@ -525,28 +952,82 @@ header nav a:hover{
     margin: 5px 20px 15px;
 }
 #contact iframe{
+    
     border-radius: 20px;
 }
+
+/* -------------------RWD------------ */
+/* 手機 */
+@media (max-width: 767px) {
+ 
+    #contact{
+        display: flex;
+        flex-direction: column;
+        margin:auto;
+        padding-top: 13vh;
+        padding-bottom: 10px;
+        
+    }
+    #contact div{
+        width: 70% ;
+        margin:18px auto;
+    }
+    #contact iframe{
+        width: 98%;
+    }    
+}
+/* 平板 */
+@media (min-width: 768px) {
+    #contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding-top: 6vh;
+        padding-bottom: 20px;
+    }
+    #contact div{
+       width: 43% ;
+        margin:10px auto;
+       
+    }
+}
+/* 桌機 */
+@media (min-width: 992px) {
+    #contact{
+        display: flex;
+        flex-direction: row;
+        padding-top: 0vh;
+        padding-bottom: 0vh;
+    }
+    #contact div{
+        width: auto;
+        margin: 50px 30px;
+    }
+} 
+   /* -------------------RWD------------ */
+
+
 /* -------------------------footert區--------------------- */
 footer{
     background-color: rgba(255, 255, 255, 0.503);
     box-shadow: 0px 0px 6px #a7a7a7;
 }
 .footer_list{
-    width: 55%;
+    /* width: 55%; */
     display: flex;
     margin: auto;
     padding:25px 0;
     justify-content: space-between; 
 }
-.footer_list div{
+/* .footer_list div{
     width: 25%;
-}
+} */
 .footer_list h1{
     margin: 11px 0px 10px;
 }
 footer img{
-    width: 75%;
+    /* width: 75%; */
     margin: auto;
 }
 .footer_policy li{
@@ -611,20 +1092,100 @@ footer nav a:hover{
     font-size: 1.1rem;
     font-weight: 500;
     letter-spacing: 0.1rem;
+    border: 0px ;
     border-bottom: 4px solid rgb(202, 202, 202);
+    
     margin-bottom: 7px;
     margin-left: 10px;
     padding-bottom: 5px;
     width: 4.8rem;
     border-style: solid; 
 }
-/* ----------------------------------------------------- */
 
+/* -------------------RWD------------ */
+/* 手機 */
+@media (max-width: 767px) {
+    .footer_list div{
+        width: 40%;
+    }
+    .footer_list{
+        width: 80%;
+    }
+    footer img{
+        width: 100%;
+    }
+    footer nav{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+    }
+    .footer_policy a{
+        font-size: 0.9rem;
+        padding-left: 0px;
+        text-align: left;
+    }
+    .footer_copyright{
+        font-weight: 100;
+        font-size: 0.9rem;
+        width: 100%;
+    }
+    #gotop{
+        bottom: 20px;
+        right: 20px;
+    }
+}
+/* 平板 */
+@media (min-width: 768px) {
+    .footer_list{
+        width: 60%;
+    }
+    .footer_list div{
+        width: 60%;
+    }
+    footer nav{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20%;
+    }
+    footer img{
+        width: 100%;
+    }
+    #gotop{
+        bottom: 50px;
+        right: 50px;
+    }
+    
+}
+/* 桌機 */
+@media (min-width: 992px) {
+    .footer_list{
+        width: 55%;
+    }
+    .footer_list div{
+        width: 40%;
+    }
+    footer nav{
+        display: flex;
+        flex-direction: row;
+        margin-left: 0%;
+    }
+    footer img{
+        width: 75%;
+    }
+    #gotop{
+        bottom: 50px;
+        right: 50px;
+    }
+    
+} 
+   /* -------------------RWD------------ */
+
+/* ----------------------------------------------------- */
 #gotop{
     display: none;
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    /* bottom: 50px;
+    right: 50px; */
     width: 60px;
     height: 60px;
     cursor: pointer; /* 游標過去手的形狀 */
