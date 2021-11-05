@@ -805,7 +805,7 @@ header nav a:hover{
         height: auto;
     }
     .product_intro {
-        width: 80%; 
+        width: 85%; 
         margin-bottom: 20px;
     }
     .product_intro a{
@@ -1023,7 +1023,7 @@ header nav a:hover{
     }
     #contact div{
         width: 85% ;
-        margin:18px auto;
+        margin:12px auto;
         height: auto;
     }
     #contact iframe{
