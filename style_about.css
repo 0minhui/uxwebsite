@@ -611,8 +611,7 @@ footer nav a:hover{
     /* margin: 60px auto; */
     text-align: center  !important;
    /*  font-size: 1.4rem; */
-    letter-spacing: 0.1rem;
-}
+} 
 .about_02_org img{
     margin: auto;
     width: 80%;
@@ -638,9 +637,11 @@ footer nav a:hover{
 	word-wrap:break-word!important;
     }
     .about_01_imp{
-        margin: 60px auto;
+        margin: 20px auto;
+
         font-size: 1rem;
         letter-spacing: 0rem;
+        padding: 30px 0px !important;
     }
  }
  /* 平板 */
@@ -672,7 +673,7 @@ footer nav a:hover{
     box-shadow: 0px 0px 0px #ffffff00 !important ;
 }
 .certificate figure{
-    width: 40%;
+    /* width: 40%; */
     margin: 0px 30px 30px;
     overflow: hidden;
 }
@@ -700,3 +701,24 @@ footer nav a:hover{
     background-color: rgb(27, 73, 126);
     display: block;
 }
+
+/* -------------------RWD------------ */
+/* 手機 */
+@media (max-width: 767px) {
+    .certificate figure{
+        width: 100%;
+    }
+ }
+ /* 平板 */
+ @media (min-width: 768px) {
+    .certificate figure{
+        width: 80%;
+    }
+ }
+ /* 桌機 */
+ @media (min-width: 992px) {
+    .certificate figure{
+        width: 40%;
+    }
+ } 
+    /* -------------------RWD------------ */

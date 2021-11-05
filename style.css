@@ -532,7 +532,7 @@ header nav a:hover{
             /* border: 1px solid black; */
 
             white-space:normal!important;
-	      /*word-break:break-all!important; */
+	      /* word-break:break-all!important; */
 	        word-wrap:break-word!important;
         }
         .aboutux a{
