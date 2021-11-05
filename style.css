@@ -253,14 +253,16 @@ header nav a:hover{
 /* 手機 */
 @media (max-width: 767px) {
     .head_slogn{
-        margin-top: 170px; 
+        margin-top: 160px; 
     }
     .slogn1{
         font-size: 1.7rem;
         line-height: 3.5rem;
     }
     .slogn2{
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        letter-spacing: 0.2rem;
+       
     }
    }
    /* 平板 */
@@ -343,18 +345,22 @@ header nav a:hover{
         height: 30vh;
         border-radius: 0px 0px 0px 0px;
         justify-content: center;
-        bottom: 135px; 
+        bottom: 130px; 
+        animation: news1 3s 2s backwards;
     }
     @keyframes news1{
-        from{left: -100%;}
-        to{ left: 0;}
+        /* from{left: -100%;}
+        to{ left: 0;} */
+
+        from{opacity: 0;}
+        to{opacity: 1;}
     }
     .video1{
         width: 100%;
     }
     .news2{
         display:none;
-        bottom: 135px; 
+        bottom: 130px; 
     }
     .video2{
         display:none;
@@ -506,20 +512,21 @@ header nav a:hover{
         }
         .aboutuxdiv{ /* 深藍區塊 */
             margin: 0 3% 0 3%; 
-            height: 110vh;   
-            background-color: rgba(26, 51, 100, 0.733);
+            height: 100vh;   
+            background-color: rgba(26, 51, 100, 0.863);
+            border-radius: 0px 0px 200px 200px;
         }
         .aboutux h1{ /* 標題 */
             border-bottom:3px solid rgb(181, 203, 231);
             padding-bottom: 20px;
-            margin: 100px 80px 20px 22px;
-            width: 250px;
+            margin: 100px auto 20px ;
+            /* width: 170px; */
             letter-spacing: 0.3rem;
             font-size: 1.5rem;
         }
         .aboutux p{
-            margin: 20px 10px 10px ;
-            font-size: 0.9rem;
+            margin: 20px 20px 10px ;
+            font-size: 1rem;
             line-height: 1.5rem;
             height:65vh ;
             /* border: 1px solid black; */
@@ -538,10 +545,11 @@ header nav a:hover{
             margin:60px auto 20px ; 
         }
         .about_cert{
-            width: 97%;
+            width: 100%;
             bottom: 2%;
             height: 41vh;   
             background-color: rgba(201, 225, 255, 0.466);
+            border-radius: 0px 0px 0px 0px;
         }
         .duns{
             display: none;
@@ -591,7 +599,8 @@ header nav a:hover{
             width: 98%;
             
             bottom: 2%;
-            height: 41vh;   
+            height: 41vh; 
+            border-radius:0 35px 35px 0px ;  
         }
         .duns{
             display: block;
@@ -637,7 +646,8 @@ header nav a:hover{
          .about_cert{
             width: 47%;
             bottom: 14%;
-            height: 45vh;   
+            height: 45vh;  
+            border-radius:0 35px 35px 0px ; 
         }
         .duns{
             display: block;
@@ -652,6 +662,7 @@ header nav a:hover{
             border-bottom:2px solid rgb(26,51,100,0.88);
             text-shadow: 3px 2px 1px #c2c2c2;
             color:rgb(26,51,100,0.88);
+            
         }
     } 
     /* -------------------RWD------------ */
@@ -664,7 +675,7 @@ header nav a:hover{
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    border-radius:0 35px 35px 0px ;
+    /* border-radius:0 35px 35px 0px ; */
     position: absolute;
     left:0;
     /* bottom: 14%; */
@@ -807,7 +818,13 @@ header nav a:hover{
         width: 23px;
     }
     .product_intro figure p{ 
+        height: 6vh;
+        line-height: 4.5vh;
         width: 100%;
+    }
+    .product_intro figure{
+        border-radius: 0px 0px 50px 50px;
+
     }
    
 }
@@ -1005,15 +1022,15 @@ header nav a:hover{
         
     }
     #contact div{
-        width: 70% ;
+        width: 85% ;
         margin:18px auto;
+        height: auto;
     }
     #contact iframe{
         width: 98%;
     }   
     #contact P{
-        font-size: 0.9rem;
-
+        font-size: 1.1rem;
         white-space:normal!important;
 	    /* word-break:break-all!important; */
 	    word-wrap:break-word!important;
