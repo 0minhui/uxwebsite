@@ -437,8 +437,8 @@ header nav a:hover{
     display: flex;
     width: 100%;
     align-items: flex-start;
-    justify-content: flex-end;
-    height: 100vh;
+    /* justify-content: flex-end;
+    height: 100vh; */
     background-color: rgba(196, 202, 214, 0.52); 
 }
 .aboutuxdiv{ /* 深藍區塊 */
@@ -498,14 +498,15 @@ header nav a:hover{
     /* 手機 */
     @media (max-width: 767px) {
         #about{
-            height: 110vh;
+            height: 145vh;
         } 
         .aboutux{
-            height: 110vh;
+            height: 145vh;
+            justify-content: center;
         }
         .aboutuxdiv{ /* 深藍區塊 */
-            margin: 0 3% 0 5%; 
-            height: 71vh;   
+            margin: 0 3% 0 3%; 
+            height: 110vh;   
         }
         .aboutux h1{ /* 標題 */
             border-bottom:3px solid rgb(181, 203, 231);
@@ -516,12 +517,27 @@ header nav a:hover{
             font-size: 1.5rem;
         }
         .aboutux p{
-            margin: 0 10px 20px 20px;
-            font-size: 1rem;
+            margin: 20px 10px 10px ;
+            font-size: 0.9rem;
             line-height: 1.5rem;
+            height:65vh ;
+            /* border: 1px solid black; */
+
+            white-space:normal!important;
+	      /*word-break:break-all!important; */
+	        word-wrap:break-word!important;
+        }
+        .aboutux a{
+            display: block;
+            width: 5.5rem; 
+            padding: 3px 2px;
+            border: 1px solid #96b3d4 ;
+            border-radius: 5px;
+            font-size: 1rem;
+            margin:60px auto 20px ; 
         }
         .about_cert{
-            width: 90%;
+            width: 97%;
             bottom: 2%;
             height: 41vh;   
         }
@@ -546,11 +562,15 @@ header nav a:hover{
     /* 平板 */
     @media (min-width: 768px) {
         #about{
-            height: 100vh;
+            height: 110vh;
         } 
+        .aboutux{
+            height: 110vh;
+            justify-content: center;
+        }
         .aboutuxdiv{ /* 深藍區塊 */
-            margin: 0 10% 0 5%; 
-            height: 60vh;   
+            margin: 0 auto; 
+            height: 65vh;   
         }
         .aboutux h1{ /* 標題 */
             border-bottom:5px solid rgb(181, 203, 231);
@@ -603,6 +623,10 @@ header nav a:hover{
              letter-spacing: 0.3rem;
              font-size: 2.2rem;
          }
+         .aboutux{
+            justify-content: flex-end;
+            height: 100vh; 
+        }
          .aboutux p{
              margin: 0 40px 100px 70px;
              font-size: 1.2rem;
@@ -989,7 +1013,7 @@ header nav a:hover{
         font-size: 0.9rem;
 
         white-space:normal!important;
-	    word-break:break-all!important;
+	    /* word-break:break-all!important; */
 	    word-wrap:break-word!important;
     } 
 }
