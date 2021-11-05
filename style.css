@@ -504,17 +504,17 @@ header nav a:hover{
     /* 手機 */
     @media (max-width: 767px) {
         #about{
-            height: 145vh;
+            height: 143vh;
         } 
         .aboutux{
-            height: 145vh;
+            height: 143vh;
             justify-content: center;
         }
         .aboutuxdiv{ /* 深藍區塊 */
             margin: 0 3% 0 3%; 
             height: 100vh;   
             background-color: rgba(26, 51, 100, 0.863);
-            border-radius: 0px 0px 200px 200px;
+            border-radius: 0px 0px 80px 80px;
         }
         .aboutux h1{ /* 標題 */
             border-bottom:3px solid rgb(181, 203, 231);
@@ -546,7 +546,7 @@ header nav a:hover{
         }
         .about_cert{
             width: 100%;
-            bottom: 2%;
+            bottom: 0%;
             height: 41vh;   
             background-color: rgba(201, 225, 255, 0.466);
             border-radius: 0px 0px 0px 0px;
@@ -823,7 +823,7 @@ header nav a:hover{
         width: 100%;
     }
     .product_intro figure{
-        border-radius: 0px 0px 50px 50px;
+        border-radius: 0px 0px 30px 30px;
 
     }
    
