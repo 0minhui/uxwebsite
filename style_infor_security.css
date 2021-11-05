@@ -509,7 +509,7 @@ footer nav a:hover{
 .infor_security{
     background-color: #ffffff;
     /* width: 60%; */
-    margin:12vh auto;
+    /* margin:12vh auto; */
 }
 .infor_security h1{
     text-align: center;    
@@ -538,6 +538,7 @@ footer nav a:hover{
 @media (max-width: 767px) {
     .infor_security{
         width: 90%;
+        margin:6vh auto;
     }
     .infor_security div{
         padding: 50px 15px ;
@@ -547,6 +548,7 @@ footer nav a:hover{
  @media (min-width: 768px) {
     .infor_security{
         width: 90%;
+        margin:6vh auto;
     }
     .infor_security div{
         padding: 50px 80px ;
@@ -556,6 +558,7 @@ footer nav a:hover{
  @media (min-width: 992px) {
     .infor_security{
         width: 60%;
+        margin:12vh auto;
     }
     .infor_security div{
         padding: 60px 80px ;

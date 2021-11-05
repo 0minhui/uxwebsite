@@ -512,12 +512,12 @@ footer nav a:hover{
 /* --------------------內頁區------------- */
 .product{
     /* width: 60%; */
-    margin:12vh auto;
+    /* margin:12vh auto; */
 }
 .product h1{
     text-align: center;    
     color: #236cbe;
-    font-size: 2rem;
+    /* font-size: 2rem; */
     /* border-bottom: 1px dotted #333333; */
     padding-bottom: 5px;
     /* margin: 0 90px;  */
@@ -559,6 +559,7 @@ footer nav a:hover{
 @media (max-width: 767px) {
     .product{
      width: 90%;
+     margin:6vh auto;
     }
     .product  p{
      margin: 10px 40px;
@@ -568,15 +569,21 @@ footer nav a:hover{
     }
     .product h1{
         margin: 0 50px; 
+        font-size: 1.6rem;
     }
     .product h2{
-        margin: 10px 30px 0px;
+        margin: 10px 5px 0px;
+        font-size: 1.3rem;
+    }
+    .product img{
+        width: 95%;
     }
  }
  /* 平板 */
  @media (min-width: 768px) {
      .product{
          width: 90%;
+         margin:6vh auto;
         }
      .product  p{
          margin: 10px 40px;
@@ -586,6 +593,7 @@ footer nav a:hover{
      }
      .product h1{
         margin: 0 90px; 
+        font-size: 2rem;
     }
     .product h2{
         margin: 10px 80px 0px;
@@ -597,6 +605,7 @@ footer nav a:hover{
  @media (min-width: 992px) {
      .product{
          width: 60%;
+         margin:12vh auto;
         }
      .product  p{
          margin: 10px 120px;
@@ -606,13 +615,14 @@ footer nav a:hover{
      }
      .product h1{
         margin: 0 90px; 
+        font-size: 2rem;
     }
     .product h2{
         margin: 10px 90px 0px;
     }
      
  } 
-    /* -------------------RWD------------ */
+/* -------------------RWD------------ */
 /* --------------------------------------- */
 .pro_des{
     box-shadow: 0px 0px 3px #bebebe00 !important;
@@ -654,7 +664,7 @@ footer nav a:hover{
 
 }
 .product03 h3{
-        margin: 10px 120px;
+        /* margin: 10px 120px; */
         text-align: left;    
         color: #6e96c4; 
         padding-bottom: 10px;  
@@ -663,3 +673,63 @@ footer nav a:hover{
 .product03 img{
     width: 90%;
 }
+/* -------------------RWD------------ */
+/* 手機 */
+@media (max-width: 767px) {
+
+    .newsvideo{
+        height: 20vh;
+    }
+    .video2{
+        height: 90%;
+        width: auto;  /* 自動偵測寬度  他吃到上面的寬度90% */
+        object-fit: contain;   /* 內容一定會出現 */
+    }
+    .pro_des ul{
+        /* border: 1px solid #000;  */
+       box-shadow: 2px 2px 6px #a0a0a0;
+       margin: 0px 5px;
+       width: 650px;
+       padding: 10px 5px;
+   }
+   .product03 h3{
+    margin: 10px 30px;
+    font-size: 1rem;
+   }
+   .product03 img{
+    width: 100%;
+    }
+    .product_04img img{
+        width: 100%!important;
+    }
+ }
+ /* 平板 */
+ @media (min-width: 768px) {
+    .newsvideo{
+        height: 30vh;
+    }
+    .video2{
+        height: 90%;
+        width: auto;  /* 自動偵測寬度  他吃到上面的寬度90% */
+        object-fit: contain;   /* 內容一定會出現 */
+    }
+    .product03 h3{
+        margin: 10px 40px;
+    }
+     
+ }
+ /* 桌機 */
+ @media (min-width: 992px) {
+    .newsvideo{
+        height: 45vh;
+    }
+    .video2{
+        height: 90%;
+        width: auto;  /* 自動偵測寬度  他吃到上面的寬度90% */
+        object-fit: contain;   /* 內容一定會出現 */
+    }
+    .product03 h3{
+        margin: 10px 120px;
+    }
+ } 
+/* -------------------RWD------------ */

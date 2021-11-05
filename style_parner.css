@@ -514,7 +514,7 @@ footer nav a:hover{
 /* --------------------內頁區------------- */
 .parner{
     /* width: 60%; */
-    margin:12vh auto;
+    /* margin:12vh auto; */
 }
 .parner h1{
     text-align: center;    
@@ -585,6 +585,7 @@ footer nav a:hover{
 @media (max-width: 767px) {
     .parner{
      width: 90%;
+     margin:6vh auto;
     }
     .parner  p{
      margin: 10px 40px;
@@ -597,6 +598,7 @@ footer nav a:hover{
  @media (min-width: 768px) {
      .parner{
          width: 90%;
+         margin:6vh auto;
         }
      .parner  p{
          margin: 10px 40px;
@@ -611,6 +613,7 @@ footer nav a:hover{
  @media (min-width: 992px) {
      .parner{
          width: 60%;
+         margin:12vh auto;
         }
      .parner  p{
         margin: 25px 200px;
