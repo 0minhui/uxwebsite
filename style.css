@@ -551,7 +551,8 @@ header nav a:hover{
             height: 148vh;
             justify-content: center;
 
-            background-image: url(./images/office_md.jpg); 
+            /* background-image: url(./images/office_md.jpg);  */
+            background-color: rgba(129, 132, 139, 0.52); 
             object-fit: cover;
             /* background-position: center;  */
             background-attachment: fixed;

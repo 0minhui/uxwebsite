@@ -521,6 +521,7 @@ footer nav a:hover{
         background-attachment: fixed;
         position: absolute;
         top:0;
+        width: 100%;
     }
    .about{
     width: 90%;
