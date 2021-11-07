@@ -238,9 +238,7 @@ header nav a:hover{
    /* -------------------RWD------------ */
 /* 手機 */
 @media (max-width: 767px) {
-    /* html{
-        height: 100vh;
-    } */
+    
     .head_news{
         background-image: url("./images/head_bg1_md.png");
         background-color: #063983;  
@@ -465,10 +463,10 @@ header nav a:hover{
     /* height: 100vh; */
     width: 100%;
     position: relative;
-    background-image: url(./images/office.jpg); 
+    /* background-image: url(./images/office.jpg); 
     background-size: cover; 
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 }
 
 .iso27001{
@@ -541,14 +539,11 @@ header nav a:hover{
    /* -------------------RWD------------ */
     /* 手機 */
     @media (max-width: 767px) {
-        html{
-            height: 100%;
-        }
+        
         #about{
             height: 148vh;
             background-image: url(./images/office_md.jpg); 
-            background-size: cover; 
-            width: 100%;
+            object-fit: cover;
             /* background-position: center; */
             background-attachment: fixed;
         } 
@@ -637,6 +632,10 @@ header nav a:hover{
     @media (min-width: 768px) {
         #about{
             height: 110vh;
+            background-image: url(./images/office.jpg); 
+        background-size: cover; 
+        background-position: center;
+        background-attachment: fixed;
         } 
         .aboutux{
             height: 110vh;
@@ -706,6 +705,10 @@ header nav a:hover{
      @media (min-width: 992px) {
         #about{
             height: 100vh;
+            background-image: url(./images/office.jpg); 
+        background-size: cover; 
+        background-position: center;
+        background-attachment: fixed;
         } 
         .aboutuxdiv{ /* 深藍區塊 */
              margin: 0 14% 0 10%; 
