@@ -245,7 +245,7 @@ header nav a:hover{
         background-image: url("./images/head_bg1_md.png");
         background-color: #063983;  
         background-size: cover; 
-        /* background-position: center; */
+        background-position: center;
         background-attachment: fixed;
 
         width: 100%;
