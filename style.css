@@ -483,7 +483,7 @@ header nav a:hover{
     align-items: flex-start;
     /* justify-content: flex-end;
     height: 100vh; */
-    background-color: rgba(196, 202, 214, 0.52); 
+    /* background-color: rgba(196, 202, 214, 0.52);  */
 }
 .aboutuxdiv{ /* 深藍區塊 */
     display: none;
@@ -545,6 +545,7 @@ header nav a:hover{
         #about{
             height: 148vh;
             background-image: none;
+            position: relative;
         } 
         .aboutux{
             height: 148vh;
@@ -552,7 +553,7 @@ header nav a:hover{
 
             background-image: url(./images/office_md.jpg); 
             object-fit: cover;
-            background-position: center; 
+            /* background-position: center;  */
             background-attachment: fixed;
             position: absolute;
             top:0;
@@ -646,6 +647,7 @@ header nav a:hover{
         .aboutux{
             height: 110vh;
             justify-content: center;
+            background-color: rgba(196, 202, 214, 0.52); 
         }
         .aboutuxdiv{ /* 深藍區塊 */
             margin: 0 auto; 
@@ -731,6 +733,7 @@ header nav a:hover{
          .aboutux{
             justify-content: flex-end;
             height: 100vh; 
+            background-color: rgba(196, 202, 214, 0.52); 
         }
          .aboutux p{
              margin: 0 40px 100px 70px;
