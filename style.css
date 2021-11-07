@@ -254,6 +254,9 @@ header nav a:hover{
 @media (max-width: 767px) {
     .head_news{
         background-image: url("./images/head_bg1_md.png");
+        background-size: cover; 
+        background-position: center;
+        background-attachment: fixed;
     }
     .head_slogn{
         margin-top: 160px; 
@@ -510,6 +513,9 @@ header nav a:hover{
         #about{
             height: 148vh;
             background-image: url(./images/office_md.jpg); 
+            background-size: cover; 
+            background-position: center;
+            background-attachment: fixed;
         } 
         .aboutux{
             height: 148vh;
