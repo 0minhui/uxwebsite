@@ -197,7 +197,7 @@ header nav a:hover{
 
 
 /* -------------------------head_news區--------------------- */
-/* s */
+
 /* .head_slogn{
     margin-top: 240px; 
 } */
@@ -238,6 +238,9 @@ header nav a:hover{
    /* -------------------RWD------------ */
 /* 手機 */
 @media (max-width: 767px) {
+    body{
+        height: 100%;
+    }
     .head_news{
         background-image: url("./images/head_bg1_md.png");
         background-color: #063983;  
