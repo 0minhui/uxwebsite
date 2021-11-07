@@ -238,9 +238,9 @@ header nav a:hover{
    /* -------------------RWD------------ */
 /* 手機 */
 @media (max-width: 767px) {
-   /*  html{
+    html{
         height: 100%;
-    } */
+    }
     .head_news{
         background-image: url("./images/head_bg1_md.png");
         background-color: #063983;  
