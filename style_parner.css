@@ -108,8 +108,8 @@ header nav li{
 @media (max-width: 767px) {
     body{
         background-image: url(./images/panner_bg_md.gif);
-        background-size: cover; 
-        background-position: center;
+        object-fit: cover;
+        /* background-position: center; */
         background-attachment: fixed;
     }
     header{
