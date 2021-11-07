@@ -238,15 +238,16 @@ header nav a:hover{
    /* -------------------RWD------------ */
 /* 手機 */
 @media (max-width: 767px) {
-    body{
+   /*  body{
         height: 100%;
-    }
+    } */
     .head_news{
         background-image: url("./images/head_bg1_md.png");
         background-color: #063983;  
         object-fit: cover;
         background-position: center;
         background-attachment: fixed;
+
         width: 100%;
         display: flex;
         flex-direction: column;
