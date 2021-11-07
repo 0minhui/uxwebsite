@@ -548,6 +548,8 @@ header nav a:hover{
             object-fit: cover;
             /* background-position: center; */
             background-attachment: fixed;
+            position: absolute;
+            top:0;
         } 
         .aboutux{
             height: 148vh;
