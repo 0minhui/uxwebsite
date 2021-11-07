@@ -106,6 +106,9 @@ header nav li{
 /* -------------------RWD------------ */
 /* 手機 */
 @media (max-width: 767px) {
+    body{
+        background-image: url(./images/panner_bg_md.gif);
+    }
     header{
         height: 6vh;
         box-shadow: 0px 0px 2px #a7a7a7;
@@ -592,6 +595,10 @@ footer nav a:hover{
     }
     .parner div{
      padding: 20px 2px ;
+    }
+    .parners figure{
+        width:30%;
+        margin: 0px 5px 20px;
     }
  }
  /* 平板 */
