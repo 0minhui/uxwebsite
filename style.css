@@ -238,14 +238,14 @@ header nav a:hover{
    /* -------------------RWD------------ */
 /* 手機 */
 @media (max-width: 767px) {
-   /*  body{
+    html{
         height: 100%;
-    } */
+    }
     .head_news{
         background-image: url("./images/head_bg1_md.png");
         background-color: #063983;  
         object-fit: cover;
-        /* background-position: center; */
+        background-position: center;
         background-attachment: fixed;
 
         width: 100%;
@@ -539,10 +539,13 @@ header nav a:hover{
    /* -------------------RWD------------ */
     /* 手機 */
     @media (max-width: 767px) {
+        html{
+            height: 100%;
+        }
         #about{
             height: 148vh;
             background-image: url(./images/office_md.jpg); 
-            object-fit: cover;
+            background-size: cover; 
             width: 100%;
             background-position: center;
             background-attachment: fixed;
