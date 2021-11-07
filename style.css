@@ -546,10 +546,10 @@ header nav a:hover{
             height: 148vh;
             background-image: url(./images/office_md.jpg); 
             object-fit: cover;
-            /* background-position: center; */
+            background-position: center top; 
             background-attachment: fixed;
-            position: absolute;
-            top:0;
+            /* position: absolute;
+            top:0; */
         } 
         .aboutux{
             height: 148vh;
