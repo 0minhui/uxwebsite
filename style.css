@@ -253,6 +253,7 @@ header nav a:hover{
 /* 手機 */
 @media (max-width: 767px) {
     .head_news{
+        height: 100vh;
         background-image: url("./images/head_bg1_md.png");
         background-size: cover; 
         background-position: center;
