@@ -544,7 +544,7 @@ header nav a:hover{
             background-image: url(./images/office_md.jpg); 
             object-fit: cover;
             width: 100%;
-            background-position: center;
+            /* background-position: center; */
             background-attachment: fixed;
         } 
         .aboutux{
