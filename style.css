@@ -505,10 +505,10 @@ header nav a:hover{
     /* 手機 */
     @media (max-width: 767px) {
         #about{
-            height: 143vh;
+            height: 148vh;
         } 
         .aboutux{
-            height: 143vh;
+            height: 148vh;
             justify-content: center;
         }
         .aboutuxdiv{ /* 深藍區塊 */
@@ -548,15 +548,23 @@ header nav a:hover{
         .about_cert{
             width: 100%;
             bottom: 0%;
-            height: 41vh;   
+            height: 45vh;   
             background-color: rgba(201, 225, 255, 0.466);
             border-radius: 0px 0px 0px 0px;
+            /*  justify-content: flex-start; */
+            /* align-items: flex-start;  */
+        }
+        .about_cert div{
+            /* height: 48vh;  */ 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:flex-start; 
+            margin-right: 0px; 
+           /*  border: 1px solid olive; */
         }
         .duns{
             display: none;
-        }
-        .iso27001{
-            width: 45%;
         }
         .about_cert figure:hover p{
             padding-top: 30px;
@@ -567,7 +575,17 @@ header nav a:hover{
             color:rgba(26, 51, 100, 0); 
             border-bottom:2px solid rgba(26, 51, 100, 0);
             text-shadow: 3px 2px 1px #c2c2c200;
-            margin: 0px 60px 0px 310px;
+            
+        }
+        .iso27001{
+            width: 45%;
+        }
+        .more{ 
+            margin:0px 0px 10px 0px; 
+            display: none; 
+        }
+        .about_cert figure{
+            margin:0 5px 0 0px;
         }
     }
     /* 平板 */
@@ -591,6 +609,7 @@ header nav a:hover{
             letter-spacing: 0.3rem;
             font-size: 2.2rem;
         }
+        
         .aboutux p{
             margin: 0 40px 20px 70px;
             font-size: 1.2rem;
@@ -602,13 +621,22 @@ header nav a:hover{
             bottom: 2%;
             height: 41vh; 
             border-radius:0 35px 35px 0px ;  
+            justify-content:center; 
+            align-items: flex-end;
         }
         .duns{
             display: block;
         }
+
+        .about_cert div{ /* 證照排版區 */
+            align-items: flex-end;
+            margin-right: 30px; 
+            height: 30vh;
+        }
         .about_cert figure:hover p{
             padding-top: 60px;
             font-size: 1.2rem;
+            
         }
         .about_cert h2{
             
@@ -617,6 +645,17 @@ header nav a:hover{
             text-shadow: 3px 2px 1px #c2c2c2;
             color:rgb(26,51,100,0.88);
         }
+        .iso27001{
+            width: 32%;
+        }
+        .more{
+            margin: 20px 5px 5px 20px; 
+            display: block;
+        }
+        .about_cert figure{
+            margin:0 15px 0 25px;
+        }
+        
      }
     /* 桌機 */
      @media (min-width: 992px) {
@@ -648,10 +687,19 @@ header nav a:hover{
             width: 47%;
             bottom: 14%;
             height: 45vh;  
-            border-radius:0 35px 35px 0px ; 
+            border-radius:0 35px 35px 0px ;
+            justify-content:center; 
+            align-items: flex-end;
+            
         }
         .duns{
             display: block;
+        }
+        .about_cert div{ /* 證照排版區 */
+            align-items: flex-end;
+            margin-right: 30px; 
+            height: 30vh;
+            
         }
         .about_cert figure:hover p{
             padding-top: 60px;
@@ -665,6 +713,17 @@ header nav a:hover{
             color:rgb(26,51,100,0.88);
             
         }
+        .iso27001{
+            width: 27%;
+        }
+        .more{
+            margin: 20px 5px 5px 20px; 
+            display: block;
+        }
+        .about_cert figure{
+            margin:0 15px 0 25px;
+        }
+        
     } 
     /* -------------------RWD------------ */
 
@@ -674,8 +733,8 @@ header nav a:hover{
     /* width: 47%; */
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
+   /*  align-items: flex-end; */
+    /* justify-content: center; */
     /* border-radius:0 35px 35px 0px ; */
     position: absolute;
     left:0;
@@ -683,19 +742,19 @@ header nav a:hover{
     /* height: 45vh;    */
 }
 .about_cert div{ /* 證照排版區 */
-    align-items: flex-end;
+    /* align-items: flex-end; */
     display: flex;
-    height: 30vh; 
-    margin-right: 30px;
+   /*  height: 30vh;  */
+    /* margin-right: 30px; */
 }
 .more{
-    display: block;
+   /*  display: block; */
     width: 5.5rem; 
     padding: 2px 2px 5px;
     border: 1px solid rgba(97, 123, 175, 0.808) ;
     border-radius: 5px;
     font-size: 1rem;
-    margin:20px 5px 5px 20px; 
+   /*  margin:20px 5px 5px 20px;  */
     text-align: center; 
     text-decoration: none;
     color: rgba(97, 123, 175, 0.808);  
@@ -717,10 +776,16 @@ header nav a:hover{
     justify-content: flex-end;
 }
 .about_cert figure{
-    margin:0 15px 0 25px;
+   /*  margin:0 15px 0 25px; */
     position: relative;
     box-shadow: 5px 5px 4px rgba(132, 137, 153, 0.699);
 }
+.duns{
+    width: 43%;
+}
+/* .iso27001{
+    width: 27%;
+} */
 .about_cert figure p{ 
     
     background-color:rgba(255, 255, 255, 0) ;
