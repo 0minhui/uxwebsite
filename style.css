@@ -542,7 +542,8 @@ header nav a:hover{
         #about{
             height: 148vh;
             background-image: url(./images/office_md.jpg); 
-            background-size: cover; 
+            object-fit: cover;
+            width: 100%;
             background-position: center;
             background-attachment: fixed;
         } 
