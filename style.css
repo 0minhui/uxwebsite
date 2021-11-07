@@ -263,10 +263,12 @@ header nav a:hover{
     .slogn1{
         font-size: 1.7rem;
         line-height: 3.5rem;
+        font-weight: 600;
     }
     .slogn2{
         font-size: 1.3rem;
         letter-spacing: 0.2rem;
+        font-weight: 500;
        
     }
    }
