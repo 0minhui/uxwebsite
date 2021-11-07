@@ -544,16 +544,18 @@ header nav a:hover{
         
         #about{
             height: 148vh;
-            background-image: url(./images/office_md.jpg); 
-            object-fit: cover;
-            background-position: center top; 
-            background-attachment: fixed;
-            /* position: absolute;
-            top:0; */
+            background-image: none;
         } 
         .aboutux{
             height: 148vh;
             justify-content: center;
+
+            background-image: url(./images/office_md.jpg); 
+            object-fit: cover;
+            background-position: center; 
+            background-attachment: fixed;
+            position: absolute;
+            top:0;
         }
         .aboutuxdiv{ /* 深藍區塊 */
             margin: 0 3% 0 3%; 
