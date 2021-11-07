@@ -534,8 +534,8 @@ header nav a:hover{
     font-weight: 500;
 
     white-space:normal!important;
-	word-break:break-all!important;
-	word-wrap:break-word!important;
+	/* word-break:break-all!important; */
+	/* word-wrap:break-word!important; */
 }
 
    /* -------------------RWD------------ */
